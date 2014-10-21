@@ -8,12 +8,25 @@ public class TimerScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		timer = 100.0f;
+		timerText.color = Color.white;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		timer -= Time.deltaTime;
-		//timerText.text = timer.ToString();
-		timerText.text = (timer/60).ToString("f0") + ":" + (timer%60).ToString("f0");
+		if (timer > 0) {
+			timer -= Time.deltaTime;
+		}
+
+		if (timer <= 0) {
+			timer = 0;
+		}
+
+		int mins = Mathf.FloorToInt (timer / 60F);
+		int secs = Mathf.FloorToInt (timer - mins * 60);
+		timerText.text = string.Format("{0:0}:{1:00}", mins, secs);
+
+		if (timer == 0) {
+			timerText.color = Color.red;
+		}
 	}
 }
