@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 using UnityEngine;
+=======
+﻿using UnityEngine;
+>>>>>>> parent of b80af27... Updated TimerScript and new camera script
 =======
 ﻿using UnityEngine;
 >>>>>>> parent of b80af27... Updated TimerScript and new camera script
@@ -19,16 +23,22 @@ public class InventoryObject {
 
 	public InventoryObject(int qty, string name){
 <<<<<<< HEAD
+<<<<<<< HEAD
 		this.quantity = qty;
 		this.name = name;
 	}
 
 	// Edit the quantity by the signified amount
 =======
+=======
+>>>>>>> parent of b80af27... Updated TimerScript and new camera script
 				this.quantity = qty;
 				this.name = name;
 	}
 
+<<<<<<< HEAD
+>>>>>>> parent of b80af27... Updated TimerScript and new camera script
+=======
 >>>>>>> parent of b80af27... Updated TimerScript and new camera script
 	public void editQty(int update)
 	{
@@ -36,7 +46,10 @@ public class InventoryObject {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	// Get the quantity of an object
+=======
+>>>>>>> parent of b80af27... Updated TimerScript and new camera script
 =======
 >>>>>>> parent of b80af27... Updated TimerScript and new camera script
 	public int getQty()
@@ -45,6 +58,7 @@ public class InventoryObject {
 	}
 
 	// Not in here, in char controller
+<<<<<<< HEAD
 <<<<<<< HEAD
 	
 //	public bool interact(GameObject obj)
@@ -68,6 +82,8 @@ public class InventoryObject {
 //	}
 }
 =======
+=======
+>>>>>>> parent of b80af27... Updated TimerScript and new camera script
 	public bool interact(GameObject obj)
 	{
 		switch(obj.tag)
@@ -89,4 +105,7 @@ public class InventoryObject {
 	}
 }
 
+<<<<<<< HEAD
+>>>>>>> parent of b80af27... Updated TimerScript and new camera script
+=======
 >>>>>>> parent of b80af27... Updated TimerScript and new camera script
