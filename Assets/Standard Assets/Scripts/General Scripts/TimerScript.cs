@@ -2,12 +2,11 @@
 using System.Collections;
 
 public class TimerScript : MonoBehaviour {
-	public float timer;
+	public float timer = 100.0f;
 	public GUIText timerText;
 
 	// Use this for initialization
 	void Start () {
-		timer = 100.0f;
 		timerText.color = Color.white;
 	}
 	
