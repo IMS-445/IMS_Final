@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 [AddComponentMenu("Rayco's scripts/third person controller")]
 public class ThirdPersonController : MonoBehaviour {
