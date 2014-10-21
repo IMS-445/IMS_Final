@@ -14,6 +14,6 @@ public class TimerScript : MonoBehaviour {
 	void Update () {
 		timer -= Time.deltaTime;
 		//timerText.text = timer.ToString();
-		timerText.text = (timer/60).ToString() + ":" + (timer%60).ToString();
+		timerText.text = (timer/60).ToString("f0") + ":" + (timer%60).ToString("f0");
 	}
 }
