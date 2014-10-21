@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using UnityEngine;
 using System.Collections;
 
@@ -31,6 +32,39 @@ public class InventoryObject {
 	}
 
 	// Not in here, in char controller
+=======
+﻿//using UnityEngine;
+//using System.Collections;
+//
+//public class InventoryObject {
+//	int quantity = 0;
+//	string name = "name";
+//
+//	public InventoryObject(){
+//		// create object
+//	}
+//
+//	public InventoryObject(string name){
+//		this.name = name;
+//	}
+//
+//	public InventoryObject(int qty, string name){
+//				this.quantity = qty;
+//				this.name = name;
+//	}
+//
+//	public void editQty(int update)
+//	{
+//		quantity += update;
+//	}
+//
+//	public int getQty()
+//	{
+//		return quantity;
+//	}
+//
+//	// Not in here, in char controller
+>>>>>>> origin/master
 //	public bool interact(GameObject obj)
 //	{
 //		switch(obj.tag)
@@ -50,5 +84,10 @@ public class InventoryObject {
 //			}
 //		}
 //	}
+<<<<<<< HEAD
 }
 
+=======
+//}
+//
+>>>>>>> origin/master
