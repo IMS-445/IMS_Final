@@ -2384,8 +2384,11 @@ Transform:
   m_Father: {fileID: 1139193152}
   m_RootOrder: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of b80af27... Updated TimerScript and new camera script
 =======
+=======
+>>>>>>> parent of 29c564c... InventoryObject and ThirdPersonController nixed
 --- !u!1001 &2135633646
 Prefab:
   m_ObjectHideFlags: 0
@@ -2466,4 +2469,7 @@ Prefab:
   m_RootGameObject: {fileID: 1139193151}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+<<<<<<< HEAD
+>>>>>>> parent of 29c564c... InventoryObject and ThirdPersonController nixed
+=======
 >>>>>>> parent of 29c564c... InventoryObject and ThirdPersonController nixed
