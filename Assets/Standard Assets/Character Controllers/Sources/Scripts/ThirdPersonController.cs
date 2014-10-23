@@ -437,6 +437,7 @@ public AnimationClip jumpPoseAnimation;
 				if (other.tag == "Item") {
 						item_interact = GameObject.FindGameObjectWithTag ("Item");
 				} else if (other.tag == "Interactable"){
+						Debug.Log("Interact entered");
 						interactable = GameObject.FindGameObjectWithTag ("Interactable");
 		}
 	}
@@ -454,12 +455,12 @@ public AnimationClip jumpPoseAnimation;
 	{
 		switch(interactable.tag)
 		{
-		case "interactable" : 
-			InventoryObject io = inventory.Find(i => i.name == "item" && i.quantity > 0);
+		case "Interactable" : 
+			InventoryObject io = inventory.Find(i => i.name == "Item" && i.quantity > 0);
 			if(io != null){
 				Destroy(interactable);
 				io.editQty(-1);
-				if(io.getQty <= 0)
+				if(io.getQty() <= 0)
 					inventory.Remove(io);
 //				InventoryObject bucket = inventory.Find(i => i.name == "empty_bucket");
 //				if(bucket != null)
@@ -467,6 +468,10 @@ public AnimationClip jumpPoseAnimation;
 //				else
 //					uinventory.Add(new InventoryObject("empty_bucket", 1));
 			}
+		break;
+		default: int x = 0;
+			break;
 		}
+		return true;
 	}
 }
