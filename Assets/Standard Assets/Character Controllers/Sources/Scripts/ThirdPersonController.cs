@@ -1,5 +1,6 @@
 using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
+
 [AddComponentMenu("Rayco's scripts/third person controller")]
 public class ThirdPersonController : MonoBehaviour {
 	public AnimationClip idleAnimation;
@@ -22,6 +23,11 @@ public class ThirdPersonController : MonoBehaviour {
 		Running = 3,
 		Jumping = 4,   
 	}
+
+	List<InventoryObject> inventory;
+	GameObject interactable;
+	GameObject item_interact;
+
 	private CharacterState _characterState;
 	// The speed when walking
 	public float walkSpeed = 2.0F;
@@ -87,6 +93,8 @@ public class ThirdPersonController : MonoBehaviour {
 	
 	
 	private bool isControllable = true;
+
+
 	
 	// Use this for initialization
 	void  Awake (){
@@ -118,7 +126,9 @@ public AnimationClip jumpPoseAnimation;
 			_animation = null;
 			Debug.Log("No jump animation found and the character has canJump enabled. Turning off animations.");
 		}
-		
+
+		inventory = new List<InventoryObject>();
+		interactable = new GameObject();
 	}
 	void  UpdateSmoothedMovementDirection (){
 		Transform cameraTransform = Camera.main.transform;
@@ -368,6 +378,14 @@ public AnimationClip jumpPoseAnimation;
 				SendMessage("DidLand", SendMessageOptions.DontRequireReceiver);
 			}
 		}
+
+		// Inventory
+		if (Input.GetKey (KeyCode.E) && item_interact != null) {
+						inventory.Add (new InventoryObject (1, item_interact.tag));
+			GameObject.Destroy(item_interact);
+				}
+		if (Input.GetKey (KeyCode.E) && interactable != null)
+						interact ();
 	}
 	void  OnControllerColliderHit ( ControllerColliderHit hit   ){
 		//  Debug.DrawRay(hit.point, hit.normal);
@@ -413,5 +431,42 @@ public AnimationClip jumpPoseAnimation;
 	void  Reset (){
 		gameObject.tag = "Player";
 	}
-	
+
+	void OnTriggerEnter(Collider other) 
+	{
+				if (other.tag == "Item") {
+						item_interact = GameObject.FindGameObjectWithTag ("Item");
+				} else if (other.tag == "Interactable"){
+						interactable = GameObject.FindGameObjectWithTag ("Interactable");
+		}
+	}
+
+	void OnTriggerExit(Collider other)
+	{
+		if (other.tag == "Item") {
+			item_interact = null;
+		} else if (other.tag == "Interactable"){
+			interactable = null;
+		}
+	}
+
+	public bool interact()
+	{
+		switch(interactable.tag)
+		{
+		case "interactable" : 
+			InventoryObject io = inventory.Find(i => i.name == "item" && i.quantity > 0);
+			if(io != null){
+				Destroy(interactable);
+				io.editQty(-1);
+				if(io.getQty <= 0)
+					inventory.Remove(io);
+//				InventoryObject bucket = inventory.Find(i => i.name == "empty_bucket");
+//				if(bucket != null)
+//					bucket.editQty(1);
+//				else
+//					uinventory.Add(new InventoryObject("empty_bucket", 1));
+			}
+		}
+	}
 }
