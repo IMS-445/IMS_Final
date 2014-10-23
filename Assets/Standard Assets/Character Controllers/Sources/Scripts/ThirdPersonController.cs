@@ -378,7 +378,7 @@ public AnimationClip jumpPoseAnimation;
 		return moveSpeed;
 	}
 	
-	bool  IsJumping (){
+	public bool  IsJumping (){
 		return jumping;
 	}
 	
@@ -390,11 +390,11 @@ public AnimationClip jumpPoseAnimation;
 		return moveDirection;
 	}
 	
-	bool  IsMovingBackwards (){
+	public bool  IsMovingBackwards (){
 		return movingBack;
 	}
 	
-	float  GetLockCameraTimer (){
+	public float  GetLockCameraTimer (){
 		return lockCameraTimer;
 	}
 	

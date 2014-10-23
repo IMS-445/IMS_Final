@@ -1359,7 +1359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b167d00b3108411a8a963cba5ddde1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 0}
+  cameraTransform: {fileID: 783179396}
   distance: 3
   height: 1
   angularSmoothLag: .100000001
@@ -1378,13 +1378,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1139193151}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5ac211a643e447ca78c2d794a16381, type: 3}
+  m_Script: {fileID: 11500000, guid: fb17c8a4618da48488a29015ea181f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idleAnimation: {fileID: 0}
-  walkAnimation: {fileID: 0}
-  runAnimation: {fileID: 0}
-  jumpPoseAnimation: {fileID: 0}
+  idleAnimation: {fileID: 7400012, guid: 449b48f7eb5d87a4baaa5fb73f875a59, type: 3}
+  walkAnimation: {fileID: 7400016, guid: 449b48f7eb5d87a4baaa5fb73f875a59, type: 3}
+  runAnimation: {fileID: 7400014, guid: 449b48f7eb5d87a4baaa5fb73f875a59, type: 3}
+  jumpPoseAnimation: {fileID: 7400018, guid: 449b48f7eb5d87a4baaa5fb73f875a59, type: 3}
   walkMaxAnimationSpeed: .75
   trotMaxAnimationSpeed: 1
   runMaxAnimationSpeed: 1
@@ -2120,11 +2120,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1777784145}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 081ac5a2161175c4090474481cc4147b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2aadbfdf972e23b4ca425589ad065f87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 50
-  timerText: {fileID: 1777784147}
+  timer: 60
+  timerText: {fileID: 0}
 --- !u!1 &1798069892
 GameObject:
   m_ObjectHideFlags: 0
