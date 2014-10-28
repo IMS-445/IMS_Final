@@ -6,6 +6,7 @@ public class GameOverTextScript : MonoBehaviour {
 	public GameObject manager;
 	// Use this for initialization
 	void Start () {
+		manager = gameObject.GetComponents (GameManager);
 		//msg.text = "Game Over\nNumber of civilians saved: " + manager.civiliansSaved;
 	}
 	
