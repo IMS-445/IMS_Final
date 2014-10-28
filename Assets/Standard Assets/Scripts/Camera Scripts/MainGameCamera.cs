@@ -9,7 +9,7 @@ public class MainGameCamera : MonoBehaviour {
 	private Vector3 offset;
 	
 	void Start () {
-		offset = new Vector3(player.position.x - 6.0f, player.position.y + 3.0f, player.position.z + 7.0f);
+		offset = new Vector3(player.position.x - 0.0f, player.position.y - 0.0f, player.position.z - 2.0f);
 	}
 	
 	void LateUpdate()
