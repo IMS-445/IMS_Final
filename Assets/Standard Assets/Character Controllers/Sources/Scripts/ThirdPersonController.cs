@@ -459,14 +459,16 @@ public AnimationClip jumpPoseAnimation;
 			if(io != null){
 				Destroy(interactable);
 				io.editQty(-1);
-				if(io.getQty <= 0)
+				if(io.getQty() <= 0)
 					inventory.Remove(io);
 //				InventoryObject bucket = inventory.Find(i => i.name == "empty_bucket");
 //				if(bucket != null)
 //					bucket.editQty(1);
 //				else
 //					uinventory.Add(new InventoryObject("empty_bucket", 1));
+			
 			}
+			break;
 		}
 	}
 }
