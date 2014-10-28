@@ -379,14 +379,20 @@ public AnimationClip jumpPoseAnimation;
 			}
 		}
 
-		// Inventory
+		// INVENTORY
 		if (Input.GetKey (KeyCode.E) && item_interact != null) {
-						inventory.Add (new InventoryObject (1, item_interact.tag));
+			InventoryObject io = inventory.Find(i => i.name == item_interact.name);
+			if(io != null)
+				io.editQty(1);
+			else
+				inventory.Add(new InventoryObject(1, item_interact.name));
 			GameObject.Destroy(item_interact);
-				}
+		}
+
 		if (Input.GetKey (KeyCode.E) && interactable != null)
-						interact ();
+				interact ();
 	}
+
 	void  OnControllerColliderHit ( ControllerColliderHit hit   ){
 		//  Debug.DrawRay(hit.point, hit.normal);
 		if (hit.moveDirection.y > 0.01f)
@@ -434,10 +440,12 @@ public AnimationClip jumpPoseAnimation;
 
 	void OnTriggerEnter(Collider other) 
 	{
-				if (other.tag == "Item") {
-						item_interact = GameObject.FindGameObjectWithTag ("Item");
-				} else if (other.tag == "Interactable"){
-						interactable = GameObject.FindGameObjectWithTag ("Interactable");
+		if (other.tag == "Item") {
+			item_interact = other.gameObject;
+			Debug.Log(item_interact.name);
+		} else if (other.tag == "Interactable"){
+			Debug.Log("Interact entered");
+			interactable = other.gameObject;
 		}
 	}
 
@@ -452,23 +460,40 @@ public AnimationClip jumpPoseAnimation;
 
 	public bool interact()
 	{
-		switch(interactable.tag)
+		switch(interactable.name)
 		{
-		case "interactable" : 
-			InventoryObject io = inventory.Find(i => i.name == "item" && i.quantity > 0);
+		case "Fire" : 
+			InventoryObject io = inventory.Find(i => i.name == "Full_bucket" && i.quantity > 0);
 			if(io != null){
 				Destroy(interactable);
 				io.editQty(-1);
-				if(io.getQty() <= 0)
-					inventory.Remove(io);
-//				InventoryObject bucket = inventory.Find(i => i.name == "empty_bucket");
-//				if(bucket != null)
-//					bucket.editQty(1);
-//				else
-//					uinventory.Add(new InventoryObject("empty_bucket", 1));
-			
+				//if(io.getQty() <= 0)
+					//inventory.Remove(io);
+				InventoryObject bucket = inventory.Find(i => i.name == "Empty_bucket");
+				if(bucket != null)
+					bucket.editQty(1);
+				else
+					inventory.Add(new InventoryObject(1, "Empty_bucket"));
 			}
 			break;
+		case "Water" :
+			InventoryObject eb = inventory.Find(i => i.name == "Empty_bucket" && i.quantity > 0);
+
+			if(eb != null){
+				Debug.Log("we have an empty bucket");
+				int qty = eb.getQty();
+				InventoryObject fb = inventory.Find(i => i.name == "Full_bucket");
+				if(fb != null)
+					fb.editQty(eb.getQty());
+				else
+					inventory.Add(new InventoryObject(eb.getQty(), "Full_bucket"));
+
+				eb.editQty(-eb.getQty());
+			}
+			break;
+		default:
+			break;
 		}
+		return true;
 	}
 }
