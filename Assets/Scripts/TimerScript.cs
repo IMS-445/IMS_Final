@@ -19,6 +19,7 @@ public class TimerScript : MonoBehaviour {
 
 		if (timer <= 0) {
 			timer = 0;
+			Application.LoadLevel("GameOver");
 		}
 
 		int mins = Mathf.FloorToInt (timer / 60F);
