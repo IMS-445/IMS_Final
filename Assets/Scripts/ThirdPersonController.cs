@@ -24,7 +24,7 @@ public class ThirdPersonController : MonoBehaviour {
 		Jumping = 4,   
 	}
 
-	List<InventoryObject> inventory;
+	public List<InventoryObject> inventory;
 	GameObject interactable;
 	GameObject item_interact;
 

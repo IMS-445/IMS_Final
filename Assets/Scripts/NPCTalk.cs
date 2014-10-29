@@ -29,7 +29,7 @@ public class NPCTalk : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		PlayerChar = GameObject.FindGameObjectWithTag ("Player");
-		playerInventory = (PlayerChar.GetComponent<ThirdPersonController> ()).GetList();
+		playerInventory = (PlayerChar.GetComponent<ThirdPersonController> ()).inventory;
 
 		GameObject obj = new GameObject("Dummy");
 		obj.AddComponent("GUIText");
@@ -91,7 +91,7 @@ public class NPCTalk : MonoBehaviour {
 
 	public void UpdateList(){
 		playerInventory = new List<InventoryObject>();
-		(PlayerChar.GetComponent<ThirdPersonController> ()).GetList ().ForEach ((InventoryObject io) => playerInventory.Add (io));
+		//(PlayerChar.GetComponent<ThirdPersonController> ()).GetList ().ForEach ((InventoryObject io) => playerInventory.Add (io));
 	}
 
 }
