@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-public enum NPCReaction {
+public enum ObjectAction {
 	AlwaysGiveBucketGeneric,
 	SometimesGiveBucket,
+	Saved,
 	Nothing,
-
+	DestroyByFilledBucket,
+	FillEmptyBucket
 };
 
 public class NPCTalk : MonoBehaviour {
@@ -15,19 +17,22 @@ public class NPCTalk : MonoBehaviour {
 
 
 	public float dist;
-	public GameObject NPCObject;
+	public GameObject NPCObject;	
 	public string talkTextDefault;
 	public string talkTextChange;
-	public float saveCost = 1.0f;
-	public NPCReaction reaction;
+	public float actionCost = 1.0f;
+	public ObjectAction action;
 	public List<InventoryObject> playerInventory;
 
 
 	private  TimerScript time;
-	public bool saved;
+	public bool inactive;
 
 	// Use this for initialization
 	void Start () {
+		if (NPCObject == null) {
+			NPCObject = this.gameObject;
+		}
 		PlayerChar = GameObject.FindGameObjectWithTag ("Player");
 		playerInventory = (PlayerChar.GetComponent<ThirdPersonController> ()).inventory;
 
@@ -48,12 +53,11 @@ public class NPCTalk : MonoBehaviour {
 	{
 		if (Vector3.Distance (NPCObject.transform.position, PlayerChar.transform.position) < dist) {
 			myGUIText.enabled = true;
-			if(Input.GetKeyDown (KeyCode.Q) && (saveCost > 0)  && !saved)
+			if(Input.GetKeyDown (KeyCode.Q) && (actionCost >= 0)  && !inactive && TriggerAction())
 			{
-				time.timer = time.timer - saveCost;
-				saved =true; 
-				myGUIText.text = talkTextChange;
-				Save();
+				time.timer = time.timer - actionCost;
+				//myGUIText.text = talkTextChange;
+				//TriggerAction();
 			}
 		} 
 		else {
@@ -61,22 +65,46 @@ public class NPCTalk : MonoBehaviour {
 		}
 	}
 
-	public void Save()
+	public bool TriggerAction()
 	{
-		switch (reaction) {
-		case NPCReaction.Nothing:
+		string workingItem = "";
+		switch (action) {
+		case ObjectAction.Nothing:
 			break;
-		case NPCReaction.SometimesGiveBucket:
+		case ObjectAction.FillEmptyBucket:
+			workingItem = "Empty_bucket";
+			if(ContainsItem(workingItem)){
+				AddItem(-1, workingItem);
+				AddItem(1,"Full_bucket");
+			}
+			break;
+		case ObjectAction.Saved:
+			//Make any necessary calls to Game manager
+			inactive =true; 
+			myGUIText.text = talkTextChange;
+			break;
+		case ObjectAction.SometimesGiveBucket:
 
 			break;
-		case NPCReaction.AlwaysGiveBucketGeneric:
+		case ObjectAction.AlwaysGiveBucketGeneric:
+			inactive =true; 
 			myGUIText.text = "Thank you for saving me!  Here is a bucket!";
 			playerInventory.Add(new InventoryObject(1,"Empty_bucket"));
 			break;
+		case ObjectAction.DestroyByFilledBucket:
+			workingItem = "Full_bucket";
+			if(ContainsItem(workingItem)){
+				AddItem(-1,workingItem);
+				AddItem(1,"Empty_bucket");
+				time.timer = time.timer - actionCost;  //This occurs here because of the deletion.
+				GameObject.Destroy(this.gameObject);
+			}
+			break;
 		}
+		return true;
 	}
 
-	public void AddItem(int num, string name){
+	void AddItem(int num, string name){
 		InventoryObject obj = playerInventory.Find ((InventoryObject io) => io.name.Equals (name));
 		if (obj == null) {
 			obj = new InventoryObject(num, name);
@@ -89,8 +117,17 @@ public class NPCTalk : MonoBehaviour {
 		}
 	}
 
+	bool ContainsItem(string name){
+		InventoryObject obj = playerInventory.Find ((InventoryObject io) => io.name.Equals (name));
+		if (obj == null) {
+				return false;
+		} else {
+				return true;
+		}
+	}
+
 	public void UpdateList(){
-		playerInventory = new List<InventoryObject>();
+		//playerInventory = new List<InventoryObject>();
 		//(PlayerChar.GetComponent<ThirdPersonController> ()).GetList ().ForEach ((InventoryObject io) => playerInventory.Add (io));
 	}
 
