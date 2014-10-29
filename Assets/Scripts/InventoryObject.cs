@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class InventoryObject {
-	int quantity = 0;
-	string name = "name";
+	public int quantity = 0;
+	public string name = "name";
 
 	public InventoryObject(){
 		// create object
@@ -12,6 +12,14 @@ public class InventoryObject {
 	public InventoryObject(int qty, string name){
 		this.quantity = qty;
 		this.name = name;
+	}
+
+	public void editQty(int i){
+		quantity += i;
+	}
+
+	public int getQty(){
+		return quantity;
 	}
 
 
