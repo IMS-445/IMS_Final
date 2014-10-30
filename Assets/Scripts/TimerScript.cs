@@ -7,7 +7,6 @@ public class TimerScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		timer = 100.0f;
 		timerText.color = Color.white;
 	}
 	
@@ -26,7 +25,7 @@ public class TimerScript : MonoBehaviour {
 		int secs = Mathf.FloorToInt (timer - mins * 60);
 		timerText.text = string.Format("{0:0}:{1:00}", mins, secs);
 
-		if (timer == 0) {
+		if (timer <= 10.9) {
 			timerText.color = Color.red;
 		}
 	}

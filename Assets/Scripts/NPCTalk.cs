@@ -14,7 +14,7 @@ public class NPCTalk : MonoBehaviour {
 	
 	GameObject PlayerChar;
 	GUIText myGUIText;
-
+	PeopleSavedScript peoplesaved;
 
 	public float dist;
 	public GameObject NPCObject;	
@@ -30,6 +30,8 @@ public class NPCTalk : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		peoplesaved = GameObject.Find("SavedCounter").GetComponent<PeopleSavedScript>();
+
 		if (NPCObject == null) {
 			NPCObject = this.gameObject;
 		}
@@ -83,6 +85,7 @@ public class NPCTalk : MonoBehaviour {
 
 			inactive =true; 
 			myGUIText.text = talkTextChange;
+			peoplesaved.AddSavedPerson();
 			GameObject.Destroy(myGUIText.gameObject, 5);
 			GameObject.Destroy(this.gameObject, 5);
 			break;
@@ -93,6 +96,7 @@ public class NPCTalk : MonoBehaviour {
 			inactive =true; 
 			myGUIText.text = "Thank you for saving me!  Here is a bucket!";
 			playerInventory.Add(new InventoryObject(1,"Empty_bucket"));
+			peoplesaved.AddSavedPerson();
 			GameObject.Destroy(myGUIText.gameObject, 5);
 			GameObject.Destroy(this.gameObject, 5);
 			break;

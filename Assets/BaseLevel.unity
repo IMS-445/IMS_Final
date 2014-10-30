@@ -19,7 +19,7 @@ RenderSettings:
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientLight: {r: .801470578, g: .801470578, b: .801470578, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: d4d16ca3d56fb7142a32d49bbd323836, type: 2}
   m_HaloStrength: .5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -2086,7 +2086,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1 &206487566
 GameObject:
   m_ObjectHideFlags: 0
@@ -2224,6 +2224,10 @@ Prefab:
     - target: {fileID: 400000, guid: 326d2a04db89e7c48ab0e95c5b49a8d1, type: 2}
       propertyPath: m_RootOrder
       value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 326d2a04db89e7c48ab0e95c5b49a8d1, type: 2}
+      propertyPath: actionCost
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 326d2a04db89e7c48ab0e95c5b49a8d1, type: 2}
@@ -2611,6 +2615,10 @@ Prefab:
     - target: {fileID: 400000, guid: 326d2a04db89e7c48ab0e95c5b49a8d1, type: 2}
       propertyPath: m_RootOrder
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 326d2a04db89e7c48ab0e95c5b49a8d1, type: 2}
+      propertyPath: actionCost
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 326d2a04db89e7c48ab0e95c5b49a8d1, type: 2}
@@ -3912,7 +3920,7 @@ MonoBehaviour:
   NPCObject: {fileID: 0}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
-  actionCost: 2
+  actionCost: 10
   action: 2
   inactive: 0
 --- !u!23 &427080887
@@ -4085,6 +4093,71 @@ MeshFilter:
   m_PrefabInternal: {fileID: 543151639}
   m_GameObject: {fileID: 430523750}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &440126480
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 440126483}
+  - 132: {fileID: 440126482}
+  - 114: {fileID: 440126481}
+  m_Layer: 0
+  m_Name: SavedCounter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &440126481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 440126480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f517eba01c8cad246b36b6870230e996, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  savedText: {fileID: 440126482}
+  savedNumber: 0
+--- !u!132 &440126482
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 440126480}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: 'People Saved: 0'
+  m_Anchor: 3
+  m_Alignment: 0
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Material: {fileID: 0}
+  m_FontSize: 20
+  m_FontStyle: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &440126483
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 440126480}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .0199999996, y: .949999988, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
 --- !u!1 &456921060
 GameObject:
   m_ObjectHideFlags: 0
@@ -4610,6 +4683,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 326d2a04db89e7c48ab0e95c5b49a8d1, type: 2}
+      propertyPath: actionCost
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 326d2a04db89e7c48ab0e95c5b49a8d1, type: 2}
   m_RootGameObject: {fileID: 1301266606}
@@ -5009,7 +5086,7 @@ MonoBehaviour:
   NPCObject: {fileID: 0}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
-  actionCost: 2
+  actionCost: 10
   action: 2
   inactive: 0
 --- !u!23 &594524986
@@ -5217,7 +5294,7 @@ MonoBehaviour:
   NPCObject: {fileID: 0}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
-  actionCost: 2
+  actionCost: 10
   action: 2
   inactive: 0
 --- !u!23 &616422220
@@ -5804,7 +5881,7 @@ MonoBehaviour:
   NPCObject: {fileID: 0}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
-  actionCost: 2
+  actionCost: 10
   action: 2
   inactive: 0
 --- !u!23 &695080139
@@ -6314,6 +6391,10 @@ Prefab:
     - target: {fileID: 400000, guid: 326d2a04db89e7c48ab0e95c5b49a8d1, type: 2}
       propertyPath: m_RootOrder
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 326d2a04db89e7c48ab0e95c5b49a8d1, type: 2}
+      propertyPath: actionCost
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 326d2a04db89e7c48ab0e95c5b49a8d1, type: 2}
@@ -7523,7 +7604,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1 &1002995064
 GameObject:
   m_ObjectHideFlags: 0
@@ -7952,6 +8033,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 326d2a04db89e7c48ab0e95c5b49a8d1, type: 2}
+      propertyPath: actionCost
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 326d2a04db89e7c48ab0e95c5b49a8d1, type: 2}
   m_RootGameObject: {fileID: 1864589847}
@@ -8171,6 +8256,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 326d2a04db89e7c48ab0e95c5b49a8d1, type: 2}
+      propertyPath: actionCost
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 326d2a04db89e7c48ab0e95c5b49a8d1, type: 2}
   m_RootGameObject: {fileID: 594524984}
@@ -8242,6 +8331,10 @@ Prefab:
     - target: {fileID: 400000, guid: 326d2a04db89e7c48ab0e95c5b49a8d1, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 326d2a04db89e7c48ab0e95c5b49a8d1, type: 2}
+      propertyPath: actionCost
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 326d2a04db89e7c48ab0e95c5b49a8d1, type: 2}
@@ -8879,6 +8972,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 326d2a04db89e7c48ab0e95c5b49a8d1, type: 2}
+      propertyPath: actionCost
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 326d2a04db89e7c48ab0e95c5b49a8d1, type: 2}
   m_RootGameObject: {fileID: 695080137}
@@ -9376,7 +9473,7 @@ Transform:
   - {fileID: 1306131357}
   - {fileID: 1543128611}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
 --- !u!114 &1252975077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9399,9 +9496,9 @@ MonoBehaviour:
   landAnimationSpeed: 1
   walkSpeed: 2
   trotSpeed: 4
-  runSpeed: 6
+  runSpeed: 10
   inAirControlAcceleration: 3
-  jumpHeight: .5
+  jumpHeight: 1
   gravity: 20
   speedSmoothing: 10
   rotateSpeed: 500
@@ -9733,6 +9830,57 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1346458447}
   m_GameObject: {fileID: 1277643239}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1294327347
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1294327349}
+  - 132: {fileID: 1294327348}
+  m_Layer: 0
+  m_Name: TimerText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!132 &1294327348
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1294327347}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: Timer
+  m_Anchor: 4
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Material: {fileID: 0}
+  m_FontSize: 30
+  m_FontStyle: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &1294327349
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1294327347}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: .949999988, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1712537401}
+  m_RootOrder: 0
 --- !u!1 &1301266606
 GameObject:
   m_ObjectHideFlags: 0
@@ -9768,7 +9916,7 @@ MonoBehaviour:
   NPCObject: {fileID: 0}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
-  actionCost: 2
+  actionCost: 10
   action: 2
   inactive: 0
 --- !u!23 &1301266608
@@ -11329,7 +11477,7 @@ MonoBehaviour:
   NPCObject: {fileID: 0}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
-  actionCost: 2
+  actionCost: 10
   action: 2
   inactive: 0
 --- !u!23 &1532049846
@@ -11466,7 +11614,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1543128606}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .5, z: -2}
+  m_LocalPosition: {x: 0, y: .5, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1252975076}
@@ -11482,7 +11630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d73121a1ac4b53f4e8b7f20b19c80368, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 1306131357}
+  cameraTransform: {fileID: 1252975076}
   distance: 7
   height: 3
   angularSmoothLag: .300000012
@@ -12305,7 +12453,7 @@ GameObject:
   - 4: {fileID: 1712537401}
   - 114: {fileID: 1712537400}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Timer
   m_TagString: Timer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12322,8 +12470,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aadbfdf972e23b4ca425589ad065f87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 130
-  timerText: {fileID: 0}
+  timer: 181
+  timerText: {fileID: 1294327348}
 --- !u!4 &1712537401
 Transform:
   m_ObjectHideFlags: 0
@@ -12333,7 +12481,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1294327349}
   m_Father: {fileID: 0}
   m_RootOrder: 19
 --- !u!1 &1713326413
@@ -12470,7 +12619,7 @@ MonoBehaviour:
   NPCObject: {fileID: 0}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
-  actionCost: 2
+  actionCost: 10
   action: 2
   inactive: 0
 --- !u!23 &1749800522
@@ -12969,7 +13118,7 @@ MonoBehaviour:
   NPCObject: {fileID: 0}
   talkTextDefault: Press Q to save me!  I have fallen.
   talkTextChange: Thanks! Here is a bucket.
-  actionCost: 1
+  actionCost: 5
   action: 0
   inactive: 0
 --- !u!23 &1804823257
@@ -13509,7 +13658,7 @@ MonoBehaviour:
   NPCObject: {fileID: 0}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
-  actionCost: 2
+  actionCost: 10
   action: 2
   inactive: 0
 --- !u!23 &1864589849
@@ -13632,6 +13781,10 @@ Prefab:
     - target: {fileID: 400000, guid: 24dd5d270276ea84eb014cbc44711f72, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 24dd5d270276ea84eb014cbc44711f72, type: 2}
+      propertyPath: actionCost
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 24dd5d270276ea84eb014cbc44711f72, type: 2}
