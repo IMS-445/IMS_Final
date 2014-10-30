@@ -80,8 +80,11 @@ public class NPCTalk : MonoBehaviour {
 			break;
 		case ObjectAction.Saved:
 			//Make any necessary calls to Game manager
+
 			inactive =true; 
 			myGUIText.text = talkTextChange;
+			GameObject.Destroy(myGUIText.gameObject, 5);
+			GameObject.Destroy(this.gameObject, 5);
 			break;
 		case ObjectAction.SometimesGiveBucket:
 
@@ -90,6 +93,8 @@ public class NPCTalk : MonoBehaviour {
 			inactive =true; 
 			myGUIText.text = "Thank you for saving me!  Here is a bucket!";
 			playerInventory.Add(new InventoryObject(1,"Empty_bucket"));
+			GameObject.Destroy(myGUIText.gameObject, 5);
+			GameObject.Destroy(this.gameObject, 5);
 			break;
 		case ObjectAction.DestroyByFilledBucket:
 			workingItem = "Full_bucket";
@@ -97,6 +102,7 @@ public class NPCTalk : MonoBehaviour {
 				AddItem(-1,workingItem);
 				AddItem(1,"Empty_bucket");
 				time.timer = time.timer - actionCost;  //This occurs here because of the deletion.
+				GameObject.Destroy(myGUIText.gameObject);
 				GameObject.Destroy(this.gameObject);
 			}
 			break;
