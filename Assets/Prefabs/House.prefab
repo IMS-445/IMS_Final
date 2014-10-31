@@ -170,6 +170,7 @@ Transform:
   m_LocalScale: {x: 15, y: 13, z: .200000003}
   m_Children: []
   m_Father: {fileID: 400016}
+  m_RootOrder: 7
 --- !u!4 &400002
 Transform:
   m_ObjectHideFlags: 1
@@ -181,6 +182,7 @@ Transform:
   m_LocalScale: {x: 13.8999996, y: 5, z: .200000003}
   m_Children: []
   m_Father: {fileID: 400016}
+  m_RootOrder: 6
 --- !u!4 &400004
 Transform:
   m_ObjectHideFlags: 1
@@ -192,6 +194,7 @@ Transform:
   m_LocalScale: {x: 12, y: 5, z: .200000003}
   m_Children: []
   m_Father: {fileID: 400016}
+  m_RootOrder: 5
 --- !u!4 &400006
 Transform:
   m_ObjectHideFlags: 1
@@ -203,6 +206,7 @@ Transform:
   m_LocalScale: {x: 12, y: 5, z: .200000003}
   m_Children: []
   m_Father: {fileID: 400016}
+  m_RootOrder: 4
 --- !u!4 &400008
 Transform:
   m_ObjectHideFlags: 1
@@ -214,6 +218,7 @@ Transform:
   m_LocalScale: {x: 1.5, y: 2.79999995, z: .200000003}
   m_Children: []
   m_Father: {fileID: 400016}
+  m_RootOrder: 3
 --- !u!4 &400010
 Transform:
   m_ObjectHideFlags: 1
@@ -225,6 +230,7 @@ Transform:
   m_LocalScale: {x: 6, y: 5, z: .200000003}
   m_Children: []
   m_Father: {fileID: 400016}
+  m_RootOrder: 2
 --- !u!4 &400012
 Transform:
   m_ObjectHideFlags: 1
@@ -236,6 +242,7 @@ Transform:
   m_LocalScale: {x: 6, y: 5, z: .200000003}
   m_Children: []
   m_Father: {fileID: 400016}
+  m_RootOrder: 1
 --- !u!4 &400014
 Transform:
   m_ObjectHideFlags: 1
@@ -247,6 +254,7 @@ Transform:
   m_LocalScale: {x: 1.5, y: 2.20000005, z: .200000003}
   m_Children: []
   m_Father: {fileID: 400016}
+  m_RootOrder: 0
 --- !u!4 &400016
 Transform:
   m_ObjectHideFlags: 1
@@ -266,6 +274,7 @@ Transform:
   - {fileID: 400002}
   - {fileID: 400000}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
 --- !u!23 &2300000
 Renderer:
   m_ObjectHideFlags: 1
@@ -278,15 +287,14 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: b1000ec2810cfb0498b69ff9eba6f62d, type: 2}
+  - {fileID: 2100000, guid: 779f52b1e75df7d4ea6158a4b6eeda80, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
   m_SortingLayerID: 0
+  m_SortingOrder: 0
 --- !u!23 &2300002
 Renderer:
   m_ObjectHideFlags: 1
@@ -299,15 +307,14 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: b90c4b6bf6585c64b9daf3463a276644, type: 2}
+  - {fileID: 2100000, guid: 6d59dc21df1c6db41b19fabfefb2ca42, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
   m_SortingLayerID: 0
+  m_SortingOrder: 0
 --- !u!23 &2300004
 Renderer:
   m_ObjectHideFlags: 1
@@ -320,15 +327,14 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: b90c4b6bf6585c64b9daf3463a276644, type: 2}
+  - {fileID: 2100000, guid: 6d59dc21df1c6db41b19fabfefb2ca42, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
   m_SortingLayerID: 0
+  m_SortingOrder: 0
 --- !u!23 &2300006
 Renderer:
   m_ObjectHideFlags: 1
@@ -341,15 +347,14 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: b90c4b6bf6585c64b9daf3463a276644, type: 2}
+  - {fileID: 2100000, guid: 6d59dc21df1c6db41b19fabfefb2ca42, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
   m_SortingLayerID: 0
+  m_SortingOrder: 0
 --- !u!23 &2300008
 Renderer:
   m_ObjectHideFlags: 1
@@ -362,15 +367,14 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: b90c4b6bf6585c64b9daf3463a276644, type: 2}
+  - {fileID: 2100000, guid: 994a33d772d72a3428fe1e781be94318, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
   m_SortingLayerID: 0
+  m_SortingOrder: 0
 --- !u!23 &2300010
 Renderer:
   m_ObjectHideFlags: 1
@@ -383,15 +387,14 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: b90c4b6bf6585c64b9daf3463a276644, type: 2}
+  - {fileID: 2100000, guid: 6d59dc21df1c6db41b19fabfefb2ca42, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
   m_SortingLayerID: 0
+  m_SortingOrder: 0
 --- !u!23 &2300012
 Renderer:
   m_ObjectHideFlags: 1
@@ -404,15 +407,14 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: b90c4b6bf6585c64b9daf3463a276644, type: 2}
+  - {fileID: 2100000, guid: 6d59dc21df1c6db41b19fabfefb2ca42, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
   m_SortingLayerID: 0
+  m_SortingOrder: 0
 --- !u!23 &2300014
 Renderer:
   m_ObjectHideFlags: 1
@@ -425,15 +427,14 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 2df6eecf54fc24a4993ec3a6212e985c, type: 2}
+  - {fileID: 2100000, guid: 994a33d772d72a3428fe1e781be94318, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
   m_SortingLayerID: 0
+  m_SortingOrder: 0
 --- !u!33 &3300000
 MeshFilter:
   m_ObjectHideFlags: 1
