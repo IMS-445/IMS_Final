@@ -199,11 +199,11 @@ public AnimationClip jumpPoseAnimation;
 				targetSpeed *= runSpeed;
 				_characterState = CharacterState.Running;
 			}
-			else if (Time.time - trotAfterSeconds > walkTimeStart)
-			{
-				targetSpeed *= trotSpeed;
-				_characterState = CharacterState.Trotting;
-			}
+			//else if (Time.time - trotAfterSeconds > walkTimeStart)
+			//{
+				//targetSpeed *= trotSpeed;
+				//_characterState = CharacterState.Trotting;
+			//}
 			else
 			{
 				targetSpeed *= walkSpeed;
