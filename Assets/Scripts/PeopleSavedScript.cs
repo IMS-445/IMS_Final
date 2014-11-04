@@ -13,7 +13,7 @@ public class PeopleSavedScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		savedText.text = "People Saved: " + savedNumber.ToString();
+		savedText.text = "People Saved: " + GameController.control.getCiviliansSaved();
 	}
 
 	public void AddSavedPerson(){

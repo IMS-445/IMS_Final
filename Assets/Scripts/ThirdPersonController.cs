@@ -93,17 +93,16 @@ public class ThirdPersonController : MonoBehaviour {
 	
 	
 	private bool isControllable = true;
-
-
+	
+	//public GameManager gm;
+	public GameObject gm;
 	
 	// Use this for initialization
 	void  Awake (){
 		moveDirection = transform.TransformDirection(Vector3.forward);
-		
 		_animation = GetComponent<Animation>();
 		if(!_animation)
 			Debug.Log("The character you would like to control doesn't have animations. Moving her might look weird.");
-		
 		/*
 public AnimationClip idleAnimation;
 public AnimationClip walkAnimation;

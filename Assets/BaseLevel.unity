@@ -2460,6 +2460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 4
   NPCObject: {fileID: 0}
+  gameManager: {fileID: 1659952002}
   talkTextDefault: Press Q to save me!  I have fallen.
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 1
@@ -3512,6 +3513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 3
   NPCObject: {fileID: 0}
+  gameManager: {fileID: 1659952002}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 2
@@ -3970,6 +3972,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 4
   NPCObject: {fileID: 0}
+  gameManager: {fileID: 1659952002}
   talkTextDefault: Press Q to save me!  I have fallen.
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 1
@@ -4350,6 +4353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 3
   NPCObject: {fileID: 0}
+  gameManager: {fileID: 1659952002}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
@@ -4550,9 +4554,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 440126480}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f517eba01c8cad246b36b6870230e996, type: 3}
+  m_Script: {fileID: 11500000, guid: 5488e9432435e364aa2e844c5bf9494f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  savedText: {fileID: 440126482}
+  savedNumber: 0
 --- !u!132 &440126482
 GUIText:
   m_ObjectHideFlags: 0
@@ -5905,6 +5911,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 3
   NPCObject: {fileID: 0}
+  gameManager: {fileID: 1659952002}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
@@ -6113,6 +6120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 3
   NPCObject: {fileID: 0}
+  gameManager: {fileID: 1659952002}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
@@ -6772,6 +6780,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 3
   NPCObject: {fileID: 0}
+  gameManager: {fileID: 1659952002}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
@@ -8727,6 +8736,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 2
   NPCObject: {fileID: 0}
+  gameManager: {fileID: 0}
   talkTextDefault: Fire is in your way! Press Q
   talkTextChange: 
   actionCost: 0
@@ -8946,6 +8956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 3
   NPCObject: {fileID: 0}
+  gameManager: {fileID: 1659952002}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 2
@@ -9411,6 +9422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 4
   NPCObject: {fileID: 0}
+  gameManager: {fileID: 1659952002}
   talkTextDefault: Press Q to save me!  I have fallen.
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 1
@@ -10943,6 +10955,7 @@ MonoBehaviour:
   rotateSpeed: 50
   trotAfterSeconds: 3
   canJump: 1
+  gm: {fileID: 0}
 --- !u!143 &1252975079
 CharacterController:
   m_ObjectHideFlags: 0
@@ -11353,6 +11366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 3
   NPCObject: {fileID: 0}
+  gameManager: {fileID: 1659952002}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
@@ -13108,6 +13122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 3
   NPCObject: {fileID: 0}
+  gameManager: {fileID: 0}
   talkTextDefault: Press Q to fill a bucket
   talkTextChange: 
   actionCost: 1
@@ -13360,6 +13375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 3
   NPCObject: {fileID: 0}
+  gameManager: {fileID: 1659952002}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
@@ -13525,6 +13541,50 @@ MonoBehaviour:
   snapMaxSpeed: 720
   clampHeadPositionScreenSpace: .75
   lockCameraTimeout: .200000003
+--- !u!1001 &1545052654
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: f6f7c8c6bb5faa447a1379d9fb68b828, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 59.2000008
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6f7c8c6bb5faa447a1379d9fb68b828, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.55000043
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6f7c8c6bb5faa447a1379d9fb68b828, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 53.4000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6f7c8c6bb5faa447a1379d9fb68b828, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6f7c8c6bb5faa447a1379d9fb68b828, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6f7c8c6bb5faa447a1379d9fb68b828, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6f7c8c6bb5faa447a1379d9fb68b828, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6f7c8c6bb5faa447a1379d9fb68b828, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f6f7c8c6bb5faa447a1379d9fb68b828, type: 2}
+  m_RootGameObject: {fileID: 1659952002}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1545565035
 GameObject:
   m_ObjectHideFlags: 0
@@ -14057,6 +14117,46 @@ MeshFilter:
   m_PrefabInternal: {fileID: 322230720}
   m_GameObject: {fileID: 1657340491}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1659952002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: f6f7c8c6bb5faa447a1379d9fb68b828, type: 2}
+  m_PrefabInternal: {fileID: 1545052654}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1659952004}
+  - 114: {fileID: 1659952003}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1659952003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: f6f7c8c6bb5faa447a1379d9fb68b828,
+    type: 2}
+  m_PrefabInternal: {fileID: 1545052654}
+  m_GameObject: {fileID: 1659952002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce0c329ce18b91b4fa050cc9550a1051, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1659952004
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: f6f7c8c6bb5faa447a1379d9fb68b828, type: 2}
+  m_PrefabInternal: {fileID: 1545052654}
+  m_GameObject: {fileID: 1659952002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 59.2000008, y: 2.55000043, z: 53.4000015}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
 --- !u!1 &1661660240
 GameObject:
   m_ObjectHideFlags: 0
@@ -14455,7 +14555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aadbfdf972e23b4ca425589ad065f87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 181
+  timer: 60
   timerText: {fileID: 1294327348}
 --- !u!4 &1712537401
 Transform:
@@ -14602,6 +14702,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 3
   NPCObject: {fileID: 0}
+  gameManager: {fileID: 1659952002}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
@@ -14766,6 +14867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 2
   NPCObject: {fileID: 0}
+  gameManager: {fileID: 0}
   talkTextDefault: Fire is in your way! Press Q
   talkTextChange: 
   actionCost: 0
@@ -15173,6 +15275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 4
   NPCObject: {fileID: 0}
+  gameManager: {fileID: 1659952002}
   talkTextDefault: Press Q to save me!  I have fallen.
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 5
@@ -15857,6 +15960,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 3
   NPCObject: {fileID: 0}
+  gameManager: {fileID: 1659952002}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
@@ -16097,6 +16201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 4
   NPCObject: {fileID: 0}
+  gameManager: {fileID: 1659952002}
   talkTextDefault: Press Q to save me!  I have fallen.
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 1

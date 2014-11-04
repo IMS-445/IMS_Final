@@ -17,7 +17,8 @@ public class NPCTalk : MonoBehaviour {
 	PeopleSavedScript peoplesaved;
 
 	public float dist;
-	public GameObject NPCObject;	
+	public GameObject NPCObject;
+	public GameObject gameManager;
 	public string talkTextDefault;
 	public string talkTextChange;
 	public float actionCost = 1.0f;
@@ -31,7 +32,7 @@ public class NPCTalk : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		peoplesaved = GameObject.Find("SavedCounter").GetComponent<PeopleSavedScript>();
-
+		 
 		if (NPCObject == null) {
 			NPCObject = this.gameObject;
 		}
@@ -47,6 +48,7 @@ public class NPCTalk : MonoBehaviour {
 		myGUIText.anchor = TextAnchor.MiddleCenter;
 		obj.transform.position = new Vector3 (0.5f,0.5f,0.0f);
 		GameObject TimeParent = GameObject.FindGameObjectWithTag ("Timer");
+		GameObject gameManager;
 		time = (TimerScript)TimeParent.GetComponent<TimerScript> ();
 	}
 	
@@ -86,6 +88,7 @@ public class NPCTalk : MonoBehaviour {
 			inactive =true; 
 			myGUIText.text = talkTextChange;
 			peoplesaved.AddSavedPerson();
+			GameController.control.incrementCivilians();
 			GameObject.Destroy(myGUIText.gameObject, 5);
 			GameObject.Destroy(this.gameObject, 5);
 			break;
@@ -97,6 +100,7 @@ public class NPCTalk : MonoBehaviour {
 			myGUIText.text = "Thank you for saving me!  Here is a bucket!";
 			playerInventory.Add(new InventoryObject(1,"Empty_bucket"));
 			peoplesaved.AddSavedPerson();
+			GameController.control.incrementCivilians();
 			GameObject.Destroy(myGUIText.gameObject, 5);
 			GameObject.Destroy(this.gameObject, 5);
 			break;
