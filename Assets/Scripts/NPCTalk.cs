@@ -37,7 +37,7 @@ public class NPCTalk : MonoBehaviour {
 			NPCObject = this.gameObject;
 		}
 		PlayerChar = GameObject.FindGameObjectWithTag ("Player");
-		playerInventory = (PlayerChar.GetComponent<ThirdPersonController> ()).inventory;
+		//playerInventory = (PlayerChar.GetComponent<ThirdPersonController> ()).inventory;
 
 		GameObject obj = new GameObject("Dummy");
 		obj.AddComponent("GUIText");
@@ -98,7 +98,7 @@ public class NPCTalk : MonoBehaviour {
 		case ObjectAction.AlwaysGiveBucketGeneric:
 			inactive =true; 
 			myGUIText.text = "Thank you for saving me!  Here is a bucket!";
-			playerInventory.Add(new InventoryObject(1,"Empty_bucket"));
+			//playerInventory.Add(new InventoryObject(1,"Empty_bucket"));
 			peoplesaved.AddSavedPerson();
 			GameController.control.incrementCivilians();
 			GameObject.Destroy(myGUIText.gameObject, 5);
@@ -122,12 +122,12 @@ public class NPCTalk : MonoBehaviour {
 		InventoryObject obj = playerInventory.Find ((InventoryObject io) => io.name.Equals (name));
 		if (obj == null) {
 			obj = new InventoryObject(num, name);
-			playerInventory.Add(obj);
+			//playerInventory.Add(obj);
 		} else {
 			obj.quantity = obj.quantity + num;
 		}
 		if (obj.quantity <= 0) {
-			playerInventory.Remove(obj);
+			//playerInventory.Remove(obj);
 		}
 	}
 

@@ -8,15 +8,15 @@ public class InventoryTracker : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		GameObject PlayerChar = GameObject.FindGameObjectWithTag ("Player");
-		playerInventory = (PlayerChar.GetComponent<ThirdPersonController> ()).inventory;
+		//playerInventory = (PlayerChar.GetComponent<ThirdPersonController> ()).inventory;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		string s ="";
-		foreach (InventoryObject io in playerInventory) {
+		/*foreach (InventoryObject io in playerInventory) {
 			s += io.name + " x" + io.getQty() + "\r\n";
 		}
-		inventoryList.text = s;
+		inventoryList.text = s;*/
 	}
 }
