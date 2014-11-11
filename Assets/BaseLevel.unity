@@ -2612,6 +2612,95 @@ Transform:
   - {fileID: 1265457728}
   m_Father: {fileID: 270782560}
   m_RootOrder: 0
+--- !u!1 &100145641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100004, guid: baec086904791744185aaa07a6cf55c2, type: 2}
+  m_PrefabInternal: {fileID: 561497735}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 100145642}
+  - 54: {fileID: 100145645}
+  - 114: {fileID: 100145644}
+  - 114: {fileID: 100145643}
+  m_Layer: 0
+  m_Name: Multipurpose Camera Rig
+  m_TagString: Untagged
+  m_Icon: {fileID: -215833656, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &100145642
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: baec086904791744185aaa07a6cf55c2, type: 2}
+  m_PrefabInternal: {fileID: 561497735}
+  m_GameObject: {fileID: 100145641}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1996022619}
+  m_Father: {fileID: 2087853887}
+  m_RootOrder: 3
+--- !u!114 &100145643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: baec086904791744185aaa07a6cf55c2,
+    type: 2}
+  m_PrefabInternal: {fileID: 561497735}
+  m_GameObject: {fileID: 100145641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8d3968294210ba4a9d2bb96dfa74a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1266922771}
+  autoTargetPlayer: 1
+  updateType: 0
+  followTargetInEditMode: 1
+  moveSpeed: 10
+  turnSpeed: 5
+  rollSpeed: 0
+  followVelocity: 0
+  followTilt: 1
+  spinTurnLimit: 180
+  targetVelocityLowerLimit: 4
+  smoothTurnTime: .200000003
+--- !u!114 &100145644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: baec086904791744185aaa07a6cf55c2,
+    type: 2}
+  m_PrefabInternal: {fileID: 561497735}
+  m_GameObject: {fileID: 100145641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b04ec3bda6b7747aa53936ef3b0ae2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clipMoveTime: .0500000007
+  returnTime: .400000006
+  sphereCastRadius: .100000001
+  visualiseInEditor: 1
+  closestDistance: .5
+  dontClipTag: Player
+--- !u!54 &100145645
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: baec086904791744185aaa07a6cf55c2,
+    type: 2}
+  m_PrefabInternal: {fileID: 561497735}
+  m_GameObject: {fileID: 100145641}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: .200000003
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &102584833
 GameObject:
   m_ObjectHideFlags: 0
@@ -2673,112 +2762,6 @@ Transform:
   - {fileID: 1054098987}
   m_Father: {fileID: 0}
   m_RootOrder: 7
---- !u!1 &104370719
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 104370725}
-  - 20: {fileID: 104370724}
-  - 92: {fileID: 104370723}
-  - 124: {fileID: 104370722}
-  - 81: {fileID: 104370721}
-  - 114: {fileID: 104370720}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &104370720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 104370719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d73121a1ac4b53f4e8b7f20b19c80368, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 1252975076}
-  distance: 7
-  height: 3
-  angularSmoothLag: .300000012
-  angularMaxSpeed: 15
-  heightSmoothLag: .300000012
-  snapSmoothLag: .200000003
-  snapMaxSpeed: 720
-  clampHeadPositionScreenSpace: .75
-  lockCameraTimeout: .200000003
---- !u!81 &104370721
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 104370719}
-  m_Enabled: 1
---- !u!124 &104370722
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 104370719}
-  m_Enabled: 1
---- !u!92 &104370723
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 104370719}
-  m_Enabled: 1
---- !u!20 &104370724
-Camera:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 104370719}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: .300000012
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_HDR: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: .0219999999
---- !u!4 &104370725
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 104370719}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: -3}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
 --- !u!1 &104746532
 GameObject:
   m_ObjectHideFlags: 0
@@ -4787,12 +4770,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 3
-  NPCObject: {fileID: 0}
-  gameManager: {fileID: 0}
+  NPCObject: {fileID: 100100, guid: 7120405e4b5402d4896d6a53dd3586de, type: 3}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
   action: 2
+  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &185642197
 Animator:
@@ -11097,12 +11080,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 3
-  NPCObject: {fileID: 0}
-  gameManager: {fileID: 0}
+  NPCObject: {fileID: 100070, guid: ef26fc07f7e9fad4ea54f955d72c694b, type: 3}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
   action: 2
+  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &435467584
 Animator:
@@ -13398,12 +13381,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 4
-  NPCObject: {fileID: 0}
-  gameManager: {fileID: 0}
+  NPCObject: {fileID: 100134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
   talkTextDefault: Press Q to save me!
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 5
   action: 0
+  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &528250829
 Animator:
@@ -14041,12 +14024,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 3
-  NPCObject: {fileID: 0}
-  gameManager: {fileID: 0}
+  NPCObject: {fileID: 100070, guid: 46de719386e93684d9b9d07f82d41587, type: 3}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
   action: 2
+  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &551799794
 Animator:
@@ -14420,6 +14403,50 @@ Transform:
   - {fileID: 1516673299}
   m_Father: {fileID: 2056154982}
   m_RootOrder: 1
+--- !u!1001 &561497735
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2087853887}
+    m_Modifications:
+    - target: {fileID: 400004, guid: baec086904791744185aaa07a6cf55c2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: baec086904791744185aaa07a6cf55c2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: baec086904791744185aaa07a6cf55c2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: baec086904791744185aaa07a6cf55c2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: baec086904791744185aaa07a6cf55c2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: baec086904791744185aaa07a6cf55c2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: baec086904791744185aaa07a6cf55c2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: baec086904791744185aaa07a6cf55c2, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: baec086904791744185aaa07a6cf55c2, type: 2}
+  m_RootGameObject: {fileID: 100145641}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &563792268
 GameObject:
   m_ObjectHideFlags: 0
@@ -15557,12 +15584,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 3
-  NPCObject: {fileID: 0}
-  gameManager: {fileID: 0}
+  NPCObject: {fileID: 100100, guid: 7120405e4b5402d4896d6a53dd3586de, type: 3}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
   action: 2
+  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &611665980
 Animator:
@@ -23911,12 +23938,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 3
-  NPCObject: {fileID: 0}
-  gameManager: {fileID: 0}
+  NPCObject: {fileID: 100068, guid: b8a2163f2af6dc14bbe985ec15bb2851, type: 3}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
   action: 2
+  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &997055395
 Animator:
@@ -23996,11 +24023,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 2
   NPCObject: {fileID: 0}
-  gameManager: {fileID: 0}
   talkTextDefault: Fire is in your way! Press Q
   talkTextChange: 
   actionCost: 0
   action: 4
+  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!23 &999272605
 Renderer:
@@ -25142,12 +25169,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 4
-  NPCObject: {fileID: 0}
-  gameManager: {fileID: 0}
+  NPCObject: {fileID: 100134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
   talkTextDefault: Press Q to save me!
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 5
   action: 0
+  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &1067589183
 Animator:
@@ -27753,12 +27780,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 3
-  NPCObject: {fileID: 0}
-  gameManager: {fileID: 0}
+  NPCObject: {fileID: 100070, guid: ef26fc07f7e9fad4ea54f955d72c694b, type: 3}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
   action: 2
+  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &1191299432
 Animator:
@@ -28048,12 +28075,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 3
-  NPCObject: {fileID: 0}
-  gameManager: {fileID: 0}
+  NPCObject: {fileID: 100084, guid: a60da4f74c25efb45b4b510f0ab33afb, type: 3}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
   action: 2
+  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &1210958853
 Animator:
@@ -28863,6 +28890,94 @@ Transform:
   - {fileID: 1576372608}
   m_Father: {fileID: 349537209}
   m_RootOrder: 0
+--- !u!1 &1238950387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: baec086904791744185aaa07a6cf55c2, type: 2}
+  m_PrefabInternal: {fileID: 561497735}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1238950388}
+  - 20: {fileID: 1238950392}
+  - 92: {fileID: 1238950391}
+  - 124: {fileID: 1238950390}
+  - 81: {fileID: 1238950389}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1238950388
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: baec086904791744185aaa07a6cf55c2, type: 2}
+  m_PrefabInternal: {fileID: 561497735}
+  m_GameObject: {fileID: 1238950387}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1996022619}
+  m_RootOrder: 0
+--- !u!81 &1238950389
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8100000, guid: baec086904791744185aaa07a6cf55c2,
+    type: 2}
+  m_PrefabInternal: {fileID: 561497735}
+  m_GameObject: {fileID: 1238950387}
+  m_Enabled: 1
+--- !u!124 &1238950390
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 12400000, guid: baec086904791744185aaa07a6cf55c2,
+    type: 2}
+  m_PrefabInternal: {fileID: 561497735}
+  m_GameObject: {fileID: 1238950387}
+  m_Enabled: 1
+--- !u!92 &1238950391
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9200000, guid: baec086904791744185aaa07a6cf55c2,
+    type: 2}
+  m_PrefabInternal: {fileID: 561497735}
+  m_GameObject: {fileID: 1238950387}
+  m_Enabled: 1
+--- !u!20 &1238950392
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2000000, guid: baec086904791744185aaa07a6cf55c2,
+    type: 2}
+  m_PrefabInternal: {fileID: 561497735}
+  m_GameObject: {fileID: 1238950387}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: .619607866, g: .674509823, b: .768627465, a: .0196078438}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: .200000003
+  far clip plane: 5000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 100
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
 --- !u!1 &1240673907
 GameObject:
   m_ObjectHideFlags: 0
@@ -35098,12 +35213,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 4
-  NPCObject: {fileID: 0}
-  gameManager: {fileID: 0}
+  NPCObject: {fileID: 100134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
   talkTextDefault: Press Q to save me!
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 5
   action: 0
+  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &1507170901
 Animator:
@@ -35194,11 +35309,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 3
   NPCObject: {fileID: 0}
-  gameManager: {fileID: 0}
   talkTextDefault: Press Q to fill a bucket
   talkTextChange: 
   actionCost: 1
   action: 5
+  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!1 &1512080616
 GameObject:
@@ -40774,12 +40889,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 3
-  NPCObject: {fileID: 0}
-  gameManager: {fileID: 0}
+  NPCObject: {fileID: 100070, guid: 46de719386e93684d9b9d07f82d41587, type: 3}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
   action: 2
+  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &1761161795
 Animator:
@@ -40840,12 +40955,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 3
-  NPCObject: {fileID: 0}
-  gameManager: {fileID: 0}
+  NPCObject: {fileID: 100084, guid: a60da4f74c25efb45b4b510f0ab33afb, type: 3}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
   action: 2
+  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &1762344709
 Animator:
@@ -40924,11 +41039,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 2
   NPCObject: {fileID: 0}
-  gameManager: {fileID: 0}
   talkTextDefault: Fire is in your way! Press Q
   talkTextChange: 
   actionCost: 0
   action: 4
+  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!23 &1765914784
 Renderer:
@@ -42401,12 +42516,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 4
-  NPCObject: {fileID: 0}
-  gameManager: {fileID: 0}
+  NPCObject: {fileID: 100134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
   talkTextDefault: Press Q to save me!
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 5
   action: 0
+  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &1824387433
 Animator:
@@ -45464,6 +45579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b895d6a5b597b434b8953ed06cbc6152, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameController: {fileID: 1659952002}
   inventoryList: {fileID: 1982810696}
 --- !u!132 &1982810696
 GUIText:
@@ -45868,6 +45984,34 @@ Transform:
   - {fileID: 1276664091}
   m_Father: {fileID: 2095589798}
   m_RootOrder: 2
+--- !u!1 &1996022618
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: baec086904791744185aaa07a6cf55c2, type: 2}
+  m_PrefabInternal: {fileID: 561497735}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1996022619}
+  m_Layer: 0
+  m_Name: Pivot
+  m_TagString: Untagged
+  m_Icon: {fileID: -1500306622, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1996022619
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: baec086904791744185aaa07a6cf55c2, type: 2}
+  m_PrefabInternal: {fileID: 561497735}
+  m_GameObject: {fileID: 1996022618}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1238950388}
+  m_Father: {fileID: 100145642}
+  m_RootOrder: 0
 --- !u!1 &1999866540
 GameObject:
   m_ObjectHideFlags: 0
@@ -47033,12 +47177,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 3
-  NPCObject: {fileID: 0}
-  gameManager: {fileID: 0}
+  NPCObject: {fileID: 100068, guid: b8a2163f2af6dc14bbe985ec15bb2851, type: 3}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
   action: 2
+  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &2048386797
 Animator:
@@ -48037,6 +48181,7 @@ Transform:
   - {fileID: 942339970}
   - {fileID: 368738556}
   - {fileID: 1945583525}
+  - {fileID: 100145642}
   m_Father: {fileID: 1266922771}
   m_RootOrder: 0
 --- !u!95 &2087853888
@@ -48651,12 +48796,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 4
-  NPCObject: {fileID: 0}
-  gameManager: {fileID: 0}
+  NPCObject: {fileID: 100134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
   talkTextDefault: Press Q to save me!
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 5
   action: 0
+  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &2116455774
 Animator:

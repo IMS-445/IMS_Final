@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 
 public class GameController : MonoBehaviour {
 
 	public static GameController control;
+	public List<InventoryObject> playerInventory;
+
 	int civiliansSaved;
 
 	// Use this for initialization
