@@ -55,12 +55,12 @@ Material:
         second: .178571433
       data:
         first:
-          name: _InvFade
-        second: 1
-      data:
-        first:
           name: _Shininess
         second: .699999988
+      data:
+        first:
+          name: _InvFade
+        second: 1
       data:
         first:
           name: _Parallax
