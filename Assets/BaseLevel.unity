@@ -1264,6 +1264,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 100068, guid: b8a2163f2af6dc14bbe985ec15bb2851, type: 3}
+      propertyPath: m_Name
+      value: sara2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b8a2163f2af6dc14bbe985ec15bb2851, type: 3}
   m_RootGameObject: {fileID: 997055392}
@@ -1443,6 +1447,10 @@ Prefab:
     - target: {fileID: 400134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
+      propertyPath: m_Name
+      value: tina3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
@@ -4770,7 +4778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 3
-  NPCObject: {fileID: 100100, guid: 7120405e4b5402d4896d6a53dd3586de, type: 3}
+  NPCObject: {fileID: 185642194}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
@@ -11080,7 +11088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 3
-  NPCObject: {fileID: 100070, guid: ef26fc07f7e9fad4ea54f955d72c694b, type: 3}
+  NPCObject: {fileID: 435467581}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
@@ -13348,7 +13356,7 @@ GameObject:
   - 95: {fileID: 528250829}
   - 114: {fileID: 528250828}
   m_Layer: 0
-  m_Name: tina
+  m_Name: tina4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13381,7 +13389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 4
-  NPCObject: {fileID: 100134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
+  NPCObject: {fileID: 528250826}
   talkTextDefault: Press Q to save me!
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 5
@@ -13992,7 +14000,7 @@ GameObject:
   - 95: {fileID: 551799794}
   - 114: {fileID: 551799793}
   m_Layer: 0
-  m_Name: sona
+  m_Name: sona2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14024,7 +14032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 3
-  NPCObject: {fileID: 100070, guid: 46de719386e93684d9b9d07f82d41587, type: 3}
+  NPCObject: {fileID: 551799791}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
@@ -15552,7 +15560,7 @@ GameObject:
   - 95: {fileID: 611665980}
   - 114: {fileID: 611665979}
   m_Layer: 0
-  m_Name: hyemi
+  m_Name: hyemi2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15584,7 +15592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 3
-  NPCObject: {fileID: 100100, guid: 7120405e4b5402d4896d6a53dd3586de, type: 3}
+  NPCObject: {fileID: 611665977}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
@@ -15701,6 +15709,10 @@ Prefab:
     - target: {fileID: 400070, guid: 46de719386e93684d9b9d07f82d41587, type: 3}
       propertyPath: m_RootOrder
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 100070, guid: 46de719386e93684d9b9d07f82d41587, type: 3}
+      propertyPath: m_Name
+      value: sona2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 46de719386e93684d9b9d07f82d41587, type: 3}
@@ -17917,6 +17929,10 @@ Prefab:
     - target: {fileID: 400134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
       propertyPath: m_RootOrder
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
+      propertyPath: m_Name
+      value: tina5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
@@ -23906,7 +23922,7 @@ GameObject:
   - 95: {fileID: 997055395}
   - 114: {fileID: 997055394}
   m_Layer: 0
-  m_Name: sara
+  m_Name: sara2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23938,7 +23954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 3
-  NPCObject: {fileID: 100068, guid: b8a2163f2af6dc14bbe985ec15bb2851, type: 3}
+  NPCObject: {fileID: 997055392}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
@@ -25136,7 +25152,7 @@ GameObject:
   - 95: {fileID: 1067589183}
   - 114: {fileID: 1067589182}
   m_Layer: 0
-  m_Name: tina
+  m_Name: tina5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25169,7 +25185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 4
-  NPCObject: {fileID: 100134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
+  NPCObject: {fileID: 1067589180}
   talkTextDefault: Press Q to save me!
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 5
@@ -26072,6 +26088,10 @@ Prefab:
     - target: {fileID: 400134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
       propertyPath: m_RootOrder
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
+      propertyPath: m_Name
+      value: tina4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
@@ -27481,6 +27501,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 100070, guid: ef26fc07f7e9fad4ea54f955d72c694b, type: 3}
+      propertyPath: m_Name
+      value: nana2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ef26fc07f7e9fad4ea54f955d72c694b, type: 3}
   m_RootGameObject: {fileID: 1191299429}
@@ -27748,7 +27772,7 @@ GameObject:
   - 95: {fileID: 1191299432}
   - 114: {fileID: 1191299431}
   m_Layer: 0
-  m_Name: nana
+  m_Name: nana2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27780,7 +27804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 3
-  NPCObject: {fileID: 100070, guid: ef26fc07f7e9fad4ea54f955d72c694b, type: 3}
+  NPCObject: {fileID: 1191299429}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
@@ -28043,7 +28067,7 @@ GameObject:
   - 95: {fileID: 1210958853}
   - 114: {fileID: 1210958852}
   m_Layer: 0
-  m_Name: mimi
+  m_Name: mimi2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28075,7 +28099,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 3
-  NPCObject: {fileID: 100084, guid: a60da4f74c25efb45b4b510f0ab33afb, type: 3}
+  NPCObject: {fileID: 1210958850}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
@@ -30454,6 +30478,10 @@ Prefab:
     - target: {fileID: 400134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
       propertyPath: m_RootOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 100134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
+      propertyPath: m_Name
+      value: tina2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
@@ -35213,7 +35241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 4
-  NPCObject: {fileID: 100134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
+  NPCObject: {fileID: 1507170898}
   talkTextDefault: Press Q to save me!
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 5
@@ -40889,7 +40917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 3
-  NPCObject: {fileID: 100070, guid: 46de719386e93684d9b9d07f82d41587, type: 3}
+  NPCObject: {fileID: 1761161792}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
@@ -40955,7 +40983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 3
-  NPCObject: {fileID: 100084, guid: a60da4f74c25efb45b4b510f0ab33afb, type: 3}
+  NPCObject: {fileID: 1762344706}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
@@ -42483,7 +42511,7 @@ GameObject:
   - 95: {fileID: 1824387433}
   - 114: {fileID: 1824387432}
   m_Layer: 0
-  m_Name: tina
+  m_Name: tina2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42516,7 +42544,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 4
-  NPCObject: {fileID: 100134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
+  NPCObject: {fileID: 1824387430}
   talkTextDefault: Press Q to save me!
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 5
@@ -43565,6 +43593,10 @@ Prefab:
     - target: {fileID: 400100, guid: 7120405e4b5402d4896d6a53dd3586de, type: 3}
       propertyPath: m_RootOrder
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 100100, guid: 7120405e4b5402d4896d6a53dd3586de, type: 3}
+      propertyPath: m_Name
+      value: hyemi2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7120405e4b5402d4896d6a53dd3586de, type: 3}
@@ -47177,7 +47209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 3
-  NPCObject: {fileID: 100068, guid: b8a2163f2af6dc14bbe985ec15bb2851, type: 3}
+  NPCObject: {fileID: 2048386794}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
@@ -48397,6 +48429,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 100084, guid: a60da4f74c25efb45b4b510f0ab33afb, type: 3}
+      propertyPath: m_Name
+      value: mimi2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a60da4f74c25efb45b4b510f0ab33afb, type: 3}
   m_RootGameObject: {fileID: 1210958850}
@@ -48763,7 +48799,7 @@ GameObject:
   - 95: {fileID: 2116455774}
   - 114: {fileID: 2116455773}
   m_Layer: 0
-  m_Name: tina
+  m_Name: tina3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48796,7 +48832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 4
-  NPCObject: {fileID: 100134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
+  NPCObject: {fileID: 2116455771}
   talkTextDefault: Press Q to save me!
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 5
