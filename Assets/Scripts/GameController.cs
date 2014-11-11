@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
+		playerInventory = new List<InventoryObject> ();
 		if (control == null) {
 			DontDestroyOnLoad (gameObject);
 			control = this;
@@ -17,6 +18,8 @@ public class GameController : MonoBehaviour {
 			Destroy (gameObject);
 		//civiliansSaved = 0;
 	}
+
+
 
 	//void OnGUI(){
 	//	GUI.Label (new Rect (10, 10, 100, 30), "Civilians saved: " + civiliansSaved);
