@@ -45,6 +45,7 @@ public class ThirdPersonCharacter : MonoBehaviour {
 	float forwardAmount;
 	Vector3 velocity;
 	IComparer rayHitComparer;
+	public AudioClip grunt;
 
 	// Use this for initialization
 	void Start () {
@@ -238,6 +239,7 @@ public class ThirdPersonCharacter : MonoBehaviour {
 			onGround = false;
 			velocity = moveInput * airSpeed;
 			velocity.y = jumpPower;
+			audio.PlayOneShot(grunt);
 		}
 	}
 
