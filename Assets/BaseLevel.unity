@@ -4783,7 +4783,6 @@ MonoBehaviour:
   talkTextChange: Thank you!
   actionCost: 10
   action: 2
-  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &185642197
 Animator:
@@ -8897,6 +8896,10 @@ Prefab:
       propertyPath: grunt
       value: 
       objectReference: {fileID: 8300000, guid: 98cab7688a43416418aa2a246a6ed5fe, type: 3}
+    - target: {fileID: 11400004, guid: 05c98027197f10d48b41ecd91f0e49f3, type: 2}
+      propertyPath: gravityMultiplier
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 05c98027197f10d48b41ecd91f0e49f3, type: 2}
   m_RootGameObject: {fileID: 1266922770}
@@ -11101,7 +11104,6 @@ MonoBehaviour:
   talkTextChange: Thank you!
   actionCost: 10
   action: 2
-  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &435467584
 Animator:
@@ -13402,7 +13404,6 @@ MonoBehaviour:
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 5
   action: 0
-  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &528250829
 Animator:
@@ -14045,7 +14046,6 @@ MonoBehaviour:
   talkTextChange: Thank you!
   actionCost: 10
   action: 2
-  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &551799794
 Animator:
@@ -15605,7 +15605,6 @@ MonoBehaviour:
   talkTextChange: Thank you!
   actionCost: 10
   action: 2
-  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &611665980
 Animator:
@@ -23967,7 +23966,6 @@ MonoBehaviour:
   talkTextChange: Thank you!
   actionCost: 10
   action: 2
-  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &997055395
 Animator:
@@ -24051,7 +24049,6 @@ MonoBehaviour:
   talkTextChange: 
   actionCost: 0
   action: 4
-  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!23 &999272605
 Renderer:
@@ -25198,7 +25195,6 @@ MonoBehaviour:
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 5
   action: 0
-  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &1067589183
 Animator:
@@ -27817,7 +27813,6 @@ MonoBehaviour:
   talkTextChange: Thank you!
   actionCost: 10
   action: 2
-  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &1191299432
 Animator:
@@ -28112,7 +28107,6 @@ MonoBehaviour:
   talkTextChange: Thank you!
   actionCost: 10
   action: 2
-  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &1210958853
 Animator:
@@ -35314,7 +35308,6 @@ MonoBehaviour:
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 5
   action: 0
-  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &1507170901
 Animator:
@@ -35409,7 +35402,6 @@ MonoBehaviour:
   talkTextChange: 
   actionCost: 1
   action: 5
-  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!1 &1512080616
 GameObject:
@@ -38656,6 +38648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce0c329ce18b91b4fa050cc9550a1051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  guiltModifier: 1
 --- !u!4 &1659952004
 Transform:
   m_ObjectHideFlags: 0
@@ -39889,6 +39882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 180
   timerText: {fileID: 1294327348}
+  people: {fileID: 1494171343}
 --- !u!4 &1712537401
 Transform:
   m_ObjectHideFlags: 0
@@ -41049,7 +41043,6 @@ MonoBehaviour:
   talkTextChange: Thank you!
   actionCost: 10
   action: 2
-  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &1761161795
 Animator:
@@ -41115,7 +41108,6 @@ MonoBehaviour:
   talkTextChange: Thank you!
   actionCost: 10
   action: 2
-  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &1762344709
 Animator:
@@ -41198,7 +41190,6 @@ MonoBehaviour:
   talkTextChange: 
   actionCost: 0
   action: 4
-  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!23 &1765914784
 Renderer:
@@ -42676,7 +42667,6 @@ MonoBehaviour:
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 5
   action: 0
-  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &1824387433
 Animator:
@@ -47341,7 +47331,6 @@ MonoBehaviour:
   talkTextChange: Thank you!
   actionCost: 10
   action: 2
-  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &2048386797
 Animator:
@@ -48964,7 +48953,6 @@ MonoBehaviour:
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 5
   action: 0
-  gameController: {fileID: 1659952002}
   inactive: 0
 --- !u!95 &2116455774
 Animator:
