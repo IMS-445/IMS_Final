@@ -2631,6 +2631,7 @@ GameObject:
   - 54: {fileID: 100145645}
   - 114: {fileID: 100145644}
   - 114: {fileID: 100145643}
+  - 114: {fileID: 100145646}
   m_Layer: 0
   m_Name: Multipurpose Camera Rig
   m_TagString: Untagged
@@ -2658,7 +2659,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 561497735}
   m_GameObject: {fileID: 100145641}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8d3968294210ba4a9d2bb96dfa74a16, type: 3}
   m_Name: 
@@ -2709,6 +2710,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &100145646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 100145641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e44af8091779fcb40801d5b284353dbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1266922771}
+  autoTargetPlayer: 1
+  updateType: 0
+  followTargetInEditMode: 1
+  moveSpeed: 3
+  turnSpeed: 2.5
+  turnSmoothing: .200000003
+  tiltMax: 75
+  tiltMin: 45
+  lockCursor: 1
 --- !u!1 &102584833
 GameObject:
   m_ObjectHideFlags: 0
@@ -14458,6 +14480,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: baec086904791744185aaa07a6cf55c2, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: baec086904791744185aaa07a6cf55c2, type: 2}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1266922771}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: baec086904791744185aaa07a6cf55c2, type: 2}
   m_RootGameObject: {fileID: 100145641}

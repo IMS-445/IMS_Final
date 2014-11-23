@@ -95,7 +95,7 @@ public class NPCTalk : MonoBehaviour {
 		case ObjectAction.AlwaysGiveBucketGeneric:
 			inactive =true; 
 			myGUIText.text = "Thank you for saving me!  Here is a bucket!";
-			playerInventory.Add(new InventoryObject(1,"Empty_bucket"));
+			AddItem (1, "Empty_bucket");
 			peoplesaved.AddSavedPerson();
 			GameController.control.incrementCivilians();
 			GameObject.Destroy(myGUIText.gameObject, 5);
@@ -124,7 +124,7 @@ public class NPCTalk : MonoBehaviour {
 			obj.quantity = obj.quantity + num;
 		}
 		if (obj.quantity <= 0) {
-			//playerInventory.Remove(obj);
+			playerInventory.Remove(obj);
 		}
 	}
 

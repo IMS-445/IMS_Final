@@ -63,6 +63,13 @@ public class ThirdPersonCharacter : MonoBehaviour {
 		rayHitComparer = new RayHitComparer ();
 
 	    SetUpAnimator();
+
+		// Decrease stats from guilt
+		// gravityMultiplier
+		// moveSpeedMultiplier
+		gravityMultiplier -= GameController.control.getGuilt ();
+		moveSpeedMultiplier -= GameController.control.getGuilt ();
+
 	}
 	
 	
