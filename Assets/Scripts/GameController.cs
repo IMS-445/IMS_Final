@@ -7,6 +7,10 @@ public class GameController : MonoBehaviour {
 	public List<InventoryObject> playerInventory;
 
 	int civiliansSaved;
+	float guilt;
+	int civiliansInLevel;
+
+	public float guiltModifier = 1.0f;
 
 	// Use this for initialization
 	void Awake () {
@@ -31,5 +35,17 @@ public class GameController : MonoBehaviour {
 
 	public int getCiviliansSaved(){
 		return civiliansSaved;
+	}
+
+	public void setCiviliansInLevel(int i){
+		civiliansInLevel = i;
+	}
+
+	public void adjustGuilt(){
+		guilt += (civiliansInLevel - civiliansSaved) * guiltModifier * 0.1F;
+	}
+
+	public float getGuilt(){
+		return guilt;
 	}
 }

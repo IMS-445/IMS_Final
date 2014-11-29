@@ -23,7 +23,6 @@ public class NPCTalk : MonoBehaviour {
 	public float actionCost = 1.0f;
 	public ObjectAction action;
 	public List<InventoryObject> playerInventory;
-	public GameObject gameController;
 
 	private  TimerScript time;
 	public bool inactive;
@@ -36,7 +35,7 @@ public class NPCTalk : MonoBehaviour {
 			NPCObject = this.gameObject;
 		}
 		PlayerChar = GameObject.FindGameObjectWithTag ("Player");
-		playerInventory = (gameController.GetComponent<GameController> ()).playerInventory;
+		playerInventory = GameController.control.playerInventory;
 
 		GameObject obj = new GameObject("Dummy");
 		obj.AddComponent("GUIText");
@@ -47,7 +46,6 @@ public class NPCTalk : MonoBehaviour {
 		myGUIText.anchor = TextAnchor.MiddleCenter;
 		obj.transform.position = new Vector3 (0.5f,0.5f,0.0f);
 		GameObject TimeParent = GameObject.FindGameObjectWithTag ("Timer");
-		GameObject gameManager;
 		time = (TimerScript)TimeParent.GetComponent<TimerScript> ();
 	}
 	
@@ -97,7 +95,7 @@ public class NPCTalk : MonoBehaviour {
 		case ObjectAction.AlwaysGiveBucketGeneric:
 			inactive =true; 
 			myGUIText.text = "Thank you for saving me!  Here is a bucket!";
-			playerInventory.Add(new InventoryObject(1,"Empty_bucket"));
+			AddItem (1, "Empty_bucket");
 			peoplesaved.AddSavedPerson();
 			GameController.control.incrementCivilians();
 			GameObject.Destroy(myGUIText.gameObject, 5);
@@ -126,7 +124,7 @@ public class NPCTalk : MonoBehaviour {
 			obj.quantity = obj.quantity + num;
 		}
 		if (obj.quantity <= 0) {
-			//playerInventory.Remove(obj);
+			playerInventory.Remove(obj);
 		}
 	}
 

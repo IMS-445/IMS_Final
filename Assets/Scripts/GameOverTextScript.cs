@@ -6,7 +6,7 @@ public class GameOverTextScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//manager = GameObject.FindGameObjectWithTag ("GameController");
-		msg.text = "Number of civilians saved: " + GameController.control.getCiviliansSaved();
+		msg.text = "Number of civilians saved: " + GameController.control.getCiviliansSaved ();
 	}
 	
 	// Update is called once per frame
