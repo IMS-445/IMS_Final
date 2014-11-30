@@ -120,21 +120,22 @@ public class NPCTalk : MonoBehaviour {
 		if (obj == null) {
 			obj = new InventoryObject(num, name);
 			playerInventory.Add(obj);
-		} else {
-			obj.quantity = obj.quantity + num;
+		} else if (obj.quantity >= 0){
+			obj.quantity += num;
 		}
-		if (obj.quantity <= 0) {
-			playerInventory.Remove(obj);
-		}
+		//if (obj.quantity <= 0) {
+		//	playerInventory.Remove(obj);
+		//}
 	}
 
 	bool ContainsItem(string name){
 		InventoryObject obj = playerInventory.Find ((InventoryObject io) => io.name.Equals (name));
 		if (obj == null) {
-				return false;
-		} else {
-				return true;
-		}
+			return false;
+		} else if (obj.quantity <= 0) {
+			return false;
+		} else
+			return true;
 	}
 
 	public void UpdateList(){
