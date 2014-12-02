@@ -1865,12 +1865,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dist: 4
-  NPCObject: {fileID: 100088}
-  talkTextDefault: Press Q to save me!
+  NPCObject: {fileID: 0}
+  talkTextDefault: Help me! I am injured!
   talkTextChange: Thanks! Here is a bucket.
-  actionCost: 5
-  action: 0
-  gameController: {fileID: 0}
+  actionCost: 0
+  action: 6
+  SecondaryAction: 0
   inactive: 0
 --- !u!137 &13700000
 SkinnedMeshRenderer:
