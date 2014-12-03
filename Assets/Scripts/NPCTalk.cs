@@ -7,21 +7,24 @@ public enum ObjectAction {
 	Saved,
 	Nothing,
 	DestroyByFilledBucket,
-	FillEmptyBucket
+	FillEmptyBucket,
+	DragMe,
+	InDrag
 };
 
 public class NPCTalk : MonoBehaviour {
-	
 	GameObject PlayerChar;
 	GUIText myGUIText;
 	PeopleSavedScript peoplesaved;
 
+	public static PlayerFollow follow;
 	public float dist;
 	public GameObject NPCObject;
 	public string talkTextDefault;
 	public string talkTextChange;
 	public float actionCost = 1.0f;
 	public ObjectAction action;
+	public ObjectAction SecondaryAction; //triggers after the completion of a healing;
 	public List<InventoryObject> playerInventory;
 
 	private  TimerScript time;
@@ -30,7 +33,7 @@ public class NPCTalk : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		peoplesaved = GameObject.Find("SavedCounter").GetComponent<PeopleSavedScript>();
-		 
+		follow = PlayerFollow.playerFollow;
 		if (NPCObject == null) {
 			NPCObject = this.gameObject;
 		}
@@ -54,7 +57,7 @@ public class NPCTalk : MonoBehaviour {
 	{
 		if (Vector3.Distance (NPCObject.transform.position, PlayerChar.transform.position) < dist) {
 			myGUIText.enabled = true;
-			if(Input.GetKeyDown (KeyCode.Q) && (actionCost >= 0)  && !inactive && TriggerAction())
+			if(Input.GetKeyDown (KeyCode.Q) && (actionCost >= 0)  && !inactive && TriggerAction(action))
 			{
 				time.timer = time.timer - actionCost;
 				//myGUIText.text = talkTextChange;
@@ -66,10 +69,10 @@ public class NPCTalk : MonoBehaviour {
 		}
 	}
 
-	public bool TriggerAction()
+	public bool TriggerAction(ObjectAction a)
 	{
 		string workingItem = "";
-		switch (action) {
+		switch (a) {
 		case ObjectAction.Nothing:
 			break;
 		case ObjectAction.FillEmptyBucket:
@@ -78,6 +81,17 @@ public class NPCTalk : MonoBehaviour {
 				AddItem(-1, workingItem);
 				AddItem(1,"Full_bucket");
 			}
+			break;
+		case ObjectAction.DragMe:
+			if( follow.getFollow() == null){
+				follow.SetAsFollow(this.gameObject);
+				action = ObjectAction.InDrag;
+			}else{
+				return false;
+			}
+			break;
+		case ObjectAction.InDrag:
+			myGUIText.text = "";
 			break;
 		case ObjectAction.Saved:
 			//Make any necessary calls to Game manager
@@ -113,6 +127,15 @@ public class NPCTalk : MonoBehaviour {
 			break;
 		}
 		return true;
+	}
+
+	void OnTriggerEnter(Collider other) {
+		print ("hi1");
+		if (action == ObjectAction.InDrag && other.tag == "healZone") {
+			follow.SetAsFollow(null);
+			action = ObjectAction.Nothing;
+			TriggerAction(SecondaryAction);
+		}
 	}
 
 	void AddItem(int num, string name){
