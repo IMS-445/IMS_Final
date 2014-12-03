@@ -47,7 +47,7 @@ public class NPCTalk : MonoBehaviour {
 		myGUIText.text = talkTextDefault;
 		myGUIText.fontSize = 20;
 		myGUIText.anchor = TextAnchor.MiddleCenter;
-		obj.transform.position = new Vector3 (0.5f,0.5f,0.0f);
+		obj.transform.position = new Vector3 (0.5f,0.1f,0.0f);
 		GameObject TimeParent = GameObject.FindGameObjectWithTag ("Timer");
 		time = (TimerScript)TimeParent.GetComponent<TimerScript> ();
 	}
