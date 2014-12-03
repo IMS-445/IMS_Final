@@ -46,6 +46,7 @@ public class ThirdPersonCharacter : MonoBehaviour {
 	Vector3 velocity;
 	IComparer rayHitComparer;
 	public AudioClip grunt;
+	public AudioClip footsteps;
 
 	// Use this for initialization
 	void Start () {
@@ -79,8 +80,7 @@ public class ThirdPersonCharacter : MonoBehaviour {
 	// based on User input, or an AI control script
 	public void Move (Vector3 move, bool crouch, bool jump, Vector3 lookPos) {
 
-		if (move.magnitude > 1) move.Normalize();
-
+		if (move.magnitude > 1) move.Normalize ();
 		// transfer input parameters to member variables.
 		this.moveInput = move;
 		this.crouchInput = crouch;
@@ -212,7 +212,7 @@ public class ThirdPersonCharacter : MonoBehaviour {
 
 	void SetFriction()
 	{
-
+		audio.clip = footsteps;
 		if (onGround) {
 
 			// set friction to low or high, depending on if we're moving
@@ -222,6 +222,9 @@ public class ThirdPersonCharacter : MonoBehaviour {
 			} else {
 				// but when moving, we want no friction:
 				collider.material = advancedSettings.zeroFrictionMaterial;
+				if(!audio.isPlaying){
+					audio.Play();
+				}
 			}
 		} else {
 			// while in air, we want no friction against surfaces (walls, ceilings, etc)
