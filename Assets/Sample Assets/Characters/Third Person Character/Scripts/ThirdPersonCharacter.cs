@@ -68,10 +68,10 @@ public class ThirdPersonCharacter : MonoBehaviour {
 		// Decrease stats from guilt
 		// gravityMultiplier
 		// moveSpeedMultiplier
-		if(gravityMultiplier > 0.3f)
-			gravityMultiplier -= GameController.control.getGuilt ();
+		if(jumpPower > 0.3f)
+			gravityMultiplier -= GameController.control.getGuilt () * 3;
 		if(moveSpeedMultiplier > 0.6f)
-		moveSpeedMultiplier -= GameController.control.getGuilt ();
+			moveSpeedMultiplier -= GameController.control.getGuilt ();
 
 	}
 	
