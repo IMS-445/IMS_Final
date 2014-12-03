@@ -15,12 +15,19 @@ public class GameController : MonoBehaviour {
 	// Use this for initialization
 	void Awake () {
 		playerInventory = new List<InventoryObject> ();
+		// Add items initially
+		playerInventory.Add (new InventoryObject (0, "Empty_bucket"));
+		playerInventory.Add (new InventoryObject (0, "Full_bucket"));
 		if (control == null) {
 			DontDestroyOnLoad (gameObject);
 			control = this;
 		} else if (control != this)
 			Destroy (gameObject);
 		//civiliansSaved = 0;
+		var horizRatio = Screen.width / 800;
+		var vertRatio = Screen.height / 600;
+		
+		//GUI.matrix = Matrix4x4.TRS (new Vector3(0, 0, 0), Quaternion.identity, new Vector3 (horizRatio, vertRatio, 0));
 	}
 
 
