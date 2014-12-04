@@ -45,7 +45,7 @@ public class GameController : MonoBehaviour {
 	}
 
 	public void adjustGuilt(){
-		guilt += (civiliansInLevel - civiliansSaved) * guiltModifier * 0.1F;
+		guilt += (civiliansInLevel - civiliansSaved) * guiltModifier * 0.05F;
 	}
 
 	public float getGuilt(){
