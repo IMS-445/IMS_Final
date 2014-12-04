@@ -37,5 +37,8 @@ public class TimerScript : MonoBehaviour {
 		if (timer <= 10.9) {
 			timerText.color = Color.red;
 		}
+		if (Input.GetKeyDown (KeyCode.P)) {
+			timer = 0.0f;
+		}
 	}
 }

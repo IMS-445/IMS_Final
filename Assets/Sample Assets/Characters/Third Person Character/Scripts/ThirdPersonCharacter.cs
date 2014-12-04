@@ -69,9 +69,9 @@ public class ThirdPersonCharacter : MonoBehaviour {
 		// gravityMultiplier
 		// moveSpeedMultiplier
 		if(jumpPower > 0.3f)
-			gravityMultiplier += GameController.control.getGuilt () * 3;
+			gravityMultiplier += GameController.control.getGuilt () * 2;
 		if(moveSpeedMultiplier > 0.6f)
-			moveSpeedMultiplier -= GameController.control.getGuilt ();
+			moveSpeedMultiplier -= GameController.control.getGuilt () / 2;
 
 	}
 	

@@ -20,6 +20,9 @@ public class PlayerFollow : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (PlayerChar == null) {
+			PlayerChar = GameObject.FindGameObjectWithTag ("PlayerFollow");
+				}
 		if(followObject != null)
 		{
 			Vector3 idealPosition = PlayerChar.transform.position;
