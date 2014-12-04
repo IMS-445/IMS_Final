@@ -68,9 +68,9 @@ public class NPCTalk : MonoBehaviour {
 		else {
 			myGUIText.enabled = false;
 		}
-		if (action == ObjectAction.InDrag && Input.GetKeyDown (KeyCode.E) && ContainsItem("Health_kit")) {
+		if (action == ObjectAction.InDrag && Input.GetKeyDown (KeyCode.E) && ContainsItem("Health kit")) {
 			print ("Use a health kit");
-			AddItem(-1,"Health_kit");
+			AddItem(-1,"Health kit");
 			TriggerAction(SecondaryAction);
 			follow.SetAsFollow(null);
 			action = ObjectAction.Nothing;

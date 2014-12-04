@@ -14031,7 +14031,7 @@ MonoBehaviour:
   talkTextChange: Thank you!
   actionCost: 0
   action: 6
-  SecondaryAction: 2
+  SecondaryAction: 7
   inactive: 0
 --- !u!95 &551799794
 Animator:
@@ -49436,7 +49436,7 @@ MonoBehaviour:
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 5
   action: 6
-  SecondaryAction: 2
+  SecondaryAction: 7
   inactive: 0
 --- !u!95 &2116455774
 Animator:
