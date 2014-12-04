@@ -2,9 +2,10 @@
 using System.Collections;
 
 public class TimerScript : MonoBehaviour {
-	public float timer;
+		public float timer;
 	public GUIText timerText;
 	public GameObject people; // Used to get list of all people on the page
+	public string nextLevel;
 
 	// Use this for initialization
 	void Start () {
@@ -12,6 +13,9 @@ public class TimerScript : MonoBehaviour {
 		// Sets the civilian count to the number of child objects in the "people" game object
 		// of the layout in the level
 		GameController.control.setCiviliansInLevel (people.transform.childCount);
+		if (nextLevel == null) {
+			nextLevel = "GameOver";
+		}
 	}
 	
 	// Update is called once per frame
@@ -23,7 +27,7 @@ public class TimerScript : MonoBehaviour {
 		if (timer <= 0) {
 			timer = 0;
 			GameController.control.adjustGuilt();
-			Application.LoadLevel("GameOver");
+			Application.LoadLevel(nextLevel);
 		}
 
 		int mins = Mathf.FloorToInt (timer / 60F);

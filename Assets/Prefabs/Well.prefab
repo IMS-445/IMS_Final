@@ -157,7 +157,7 @@ MonoBehaviour:
   NPCObject: {fileID: 0}
   talkTextDefault: Press Q to fill a bucket
   talkTextChange: 
-  actionCost: 1
+  actionCost: 0
   action: 5
   SecondaryAction: 0
   inactive: 0
