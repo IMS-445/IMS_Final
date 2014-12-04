@@ -4686,7 +4686,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 3
   NPCObject: {fileID: 185642194}
-  talkTextDefault: I'm hurt, press 'Q' to help me.
+  talkTextDefault: I'm hurt, bring me to the health center
   talkTextChange: Thank you!
   actionCost: 10
   action: 6
@@ -5541,7 +5541,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400132, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
   m_PrefabInternal: {fileID: 1122574093}
   m_GameObject: {fileID: 227633268}
-  m_LocalRotation: {x: 1, y: 0, z: 0, w: -6.12323426e-17}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: -4.37113883e-08}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.38796234, y: 1.38796234, z: 1.38796234}
   m_Children: []
@@ -11063,7 +11063,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 3
   NPCObject: {fileID: 435467581}
-  talkTextDefault: I'm hurt, press 'Q' to help me.
+  talkTextDefault: I'm hurt!
   talkTextChange: Thank you!
   actionCost: 10
   action: 6
@@ -13341,8 +13341,8 @@ Transform:
   m_PrefabParentObject: {fileID: 400134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
   m_PrefabInternal: {fileID: 1122574093}
   m_GameObject: {fileID: 528250826}
-  m_LocalRotation: {x: .5, y: -.5, z: .5, w: .5}
-  m_LocalPosition: {x: 107.726906, y: .223461151, z: 103.460327}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 107.726906, y: .262101889, z: 103.460327}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 435072005}
@@ -13362,7 +13362,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 4
   NPCObject: {fileID: 528250826}
-  talkTextDefault: Press Q to save me!
+  talkTextDefault: I'm hurt, bring me to the health center
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 0
   action: 6
@@ -13394,7 +13394,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: 0, y: .5, z: 0}
 --- !u!54 &528250831
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14027,7 +14027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 3
   NPCObject: {fileID: 551799791}
-  talkTextDefault: I'm hurt, press 'Q' to help me.
+  talkTextDefault: I'm hurt, bring me to the health center
   talkTextChange: Thank you!
   actionCost: 0
   action: 6
@@ -15458,7 +15458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 3
   NPCObject: {fileID: 611665977}
-  talkTextDefault: I'm hurt, press 'Q' to help me.
+  talkTextDefault: I'm hurt, bring me to the health center
   talkTextChange: Thank you!
   actionCost: 10
   action: 6
@@ -23498,7 +23498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 3
   NPCObject: {fileID: 997055392}
-  talkTextDefault: I'm hurt, press 'Q' to help me.
+  talkTextDefault: I'm hurt, please help me!
   talkTextChange: Thank you!
   actionCost: 10
   action: 2
@@ -24808,7 +24808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 4
   NPCObject: {fileID: 1067589180}
-  talkTextDefault: Press Q to save me!
+  talkTextDefault: I'm hurt, bring me to the health center
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 5
   action: 6
@@ -25645,7 +25645,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: .223461151
+      value: .262101889
       objectReference: {fileID: 0}
     - target: {fileID: 400134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -25653,19 +25653,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
       propertyPath: m_LocalRotation.x
-      value: .5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: .5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: .5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
       propertyPath: m_RootOrder
@@ -25674,6 +25674,18 @@ Prefab:
     - target: {fileID: 100134, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
       propertyPath: m_Name
       value: tina4
+      objectReference: {fileID: 0}
+    - target: {fileID: 400132, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400132, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400132, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.37113883e-08
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cd3d5ddf44e68ae4686f2e8c9549c4c7, type: 3}
@@ -27466,7 +27478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 3
   NPCObject: {fileID: 1191299429}
-  talkTextDefault: I'm hurt, press 'Q' to help me.
+  talkTextDefault: Please help me.
   talkTextChange: Thank you!
   actionCost: 10
   action: 2
@@ -27756,7 +27768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 3
   NPCObject: {fileID: 1210958850}
-  talkTextDefault: I'm hurt, press 'Q' to help me.
+  talkTextDefault: Please help me up.
   talkTextChange: Thank you!
   actionCost: 10
   action: 2
@@ -36138,7 +36150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 4
   NPCObject: {fileID: 1507170898}
-  talkTextDefault: Press Q to save me!
+  talkTextDefault: I'm hurt, bring me to the health center
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 5
   action: 6
@@ -41589,7 +41601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 3
   NPCObject: {fileID: 1761161792}
-  talkTextDefault: I'm hurt, press 'Q' to help me.
+  talkTextDefault: Help me up, please.
   talkTextChange: Thank you!
   actionCost: 10
   action: 2
@@ -41682,7 +41694,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 3
   NPCObject: {fileID: 1762344706}
-  talkTextDefault: I'm hurt, press 'Q' to help me.
+  talkTextDefault: I'm hurt, bring me to the health center
   talkTextChange: Thank you!
   actionCost: 10
   action: 6
@@ -43186,7 +43198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 4
   NPCObject: {fileID: 1824387430}
-  talkTextDefault: Press Q to save me!
+  talkTextDefault: I'm hurt, bring me to the health center
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 5
   action: 6
@@ -47778,7 +47790,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 3
   NPCObject: {fileID: 2048386794}
-  talkTextDefault: I'm hurt, press 'Q' to help me.
+  talkTextDefault: I'm hurt, bring me to the health center
   talkTextChange: Thank you!
   actionCost: 10
   action: 6
@@ -49420,7 +49432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dist: 4
   NPCObject: {fileID: 2116455771}
-  talkTextDefault: Press Q to save me!
+  talkTextDefault: I'm hurt, bring me to the health center
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 5
   action: 6
