@@ -4714,6 +4714,8 @@ GameObject:
   - 4: {fileID: 185642195}
   - 95: {fileID: 185642197}
   - 114: {fileID: 185642196}
+  - 65: {fileID: 185642199}
+  - 54: {fileID: 185642198}
   m_Layer: 0
   m_Name: hyemi
   m_TagString: Untagged
@@ -4770,6 +4772,33 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!54 &185642198
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 185642194}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &185642199
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 185642194}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &186407224
 GameObject:
   m_ObjectHideFlags: 0
@@ -7181,7 +7210,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!131 &286378135
 GUITexture:
   m_ObjectHideFlags: 0
@@ -11222,6 +11251,8 @@ GameObject:
   - 4: {fileID: 435467582}
   - 95: {fileID: 435467584}
   - 114: {fileID: 435467583}
+  - 54: {fileID: 435467586}
+  - 65: {fileID: 435467585}
   m_Layer: 0
   m_Name: nana
   m_TagString: Untagged
@@ -11259,7 +11290,7 @@ MonoBehaviour:
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
-  action: 2
+  action: 6
   SecondaryAction: 0
   inactive: 0
 --- !u!95 &435467584
@@ -11278,6 +11309,33 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!65 &435467585
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 435467581}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &435467586
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 435467581}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &438630391
 GameObject:
   m_ObjectHideFlags: 0
@@ -14281,7 +14339,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -15666,6 +15724,8 @@ GameObject:
   - 4: {fileID: 611665978}
   - 95: {fileID: 611665980}
   - 114: {fileID: 611665979}
+  - 54: {fileID: 611665982}
+  - 65: {fileID: 611665981}
   m_Layer: 0
   m_Name: hyemi2
   m_TagString: Untagged
@@ -15703,7 +15763,7 @@ MonoBehaviour:
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
-  action: 2
+  action: 6
   SecondaryAction: 0
   inactive: 0
 --- !u!95 &611665980
@@ -15722,6 +15782,33 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!65 &611665981
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 611665977}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &611665982
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 611665977}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &612340189
 GameObject:
   m_ObjectHideFlags: 0
@@ -23767,6 +23854,8 @@ GameObject:
   - 4: {fileID: 997055393}
   - 95: {fileID: 997055395}
   - 114: {fileID: 997055394}
+  - 54: {fileID: 997055397}
+  - 65: {fileID: 997055396}
   m_Layer: 0
   m_Name: sara2
   m_TagString: Untagged
@@ -23823,6 +23912,33 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!65 &997055396
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 997055392}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &997055397
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 997055392}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &997211312
 GameObject:
   m_ObjectHideFlags: 0
@@ -25074,6 +25190,7 @@ GameObject:
   - 4: {fileID: 1067589181}
   - 95: {fileID: 1067589183}
   - 114: {fileID: 1067589182}
+  - 54: {fileID: 1067589184}
   m_Layer: 0
   m_Name: tina5
   m_TagString: Untagged
@@ -25112,7 +25229,7 @@ MonoBehaviour:
   talkTextDefault: Press Q to save me!
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 5
-  action: 0
+  action: 6
   SecondaryAction: 0
   inactive: 0
 --- !u!95 &1067589183
@@ -25131,6 +25248,21 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!54 &1067589184
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1067589180}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1072675929
 GameObject:
   m_ObjectHideFlags: 0
@@ -27762,6 +27894,8 @@ GameObject:
   - 4: {fileID: 1191299430}
   - 95: {fileID: 1191299432}
   - 114: {fileID: 1191299431}
+  - 54: {fileID: 1191299434}
+  - 65: {fileID: 1191299433}
   m_Layer: 0
   m_Name: nana2
   m_TagString: Untagged
@@ -27818,6 +27952,33 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!65 &1191299433
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1191299429}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1191299434
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1191299429}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1198609627
 GameObject:
   m_ObjectHideFlags: 0
@@ -28029,6 +28190,8 @@ GameObject:
   - 4: {fileID: 1210958851}
   - 95: {fileID: 1210958853}
   - 114: {fileID: 1210958852}
+  - 54: {fileID: 1210958855}
+  - 65: {fileID: 1210958854}
   m_Layer: 0
   m_Name: mimi2
   m_TagString: Untagged
@@ -28085,6 +28248,33 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!65 &1210958854
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1210958850}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1210958855
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1210958850}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1212106652
 GameObject:
   m_ObjectHideFlags: 0
@@ -30445,7 +30635,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!131 &1252576456
 GUITexture:
   m_ObjectHideFlags: 0
@@ -36459,6 +36649,8 @@ GameObject:
   - 4: {fileID: 1507170899}
   - 95: {fileID: 1507170901}
   - 114: {fileID: 1507170900}
+  - 54: {fileID: 1507170903}
+  - 65: {fileID: 1507170902}
   m_Layer: 0
   m_Name: tina
   m_TagString: Untagged
@@ -36497,7 +36689,7 @@ MonoBehaviour:
   talkTextDefault: Press Q to save me!
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 5
-  action: 0
+  action: 6
   SecondaryAction: 0
   inactive: 0
 --- !u!95 &1507170901
@@ -36516,6 +36708,33 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!65 &1507170902
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1507170898}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1507170903
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1507170898}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1507783468
 GameObject:
   m_ObjectHideFlags: 0
@@ -41995,6 +42214,8 @@ GameObject:
   - 4: {fileID: 1761161793}
   - 95: {fileID: 1761161795}
   - 114: {fileID: 1761161794}
+  - 54: {fileID: 1761161797}
+  - 65: {fileID: 1761161796}
   m_Layer: 0
   m_Name: sona
   m_TagString: Untagged
@@ -42051,6 +42272,33 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!65 &1761161796
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1761161792}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1761161797
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1761161792}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1762344706
 GameObject:
   m_ObjectHideFlags: 0
@@ -42061,6 +42309,8 @@ GameObject:
   - 4: {fileID: 1762344707}
   - 95: {fileID: 1762344709}
   - 114: {fileID: 1762344708}
+  - 54: {fileID: 1762344711}
+  - 65: {fileID: 1762344710}
   m_Layer: 0
   m_Name: mimi
   m_TagString: Untagged
@@ -42098,7 +42348,7 @@ MonoBehaviour:
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
   actionCost: 10
-  action: 2
+  action: 6
   SecondaryAction: 0
   inactive: 0
 --- !u!95 &1762344709
@@ -42117,6 +42367,33 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!65 &1762344710
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1762344706}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1762344711
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1762344706}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1765532831
 GameObject:
   m_ObjectHideFlags: 0
@@ -43506,6 +43783,8 @@ GameObject:
   - 4: {fileID: 1824387431}
   - 95: {fileID: 1824387433}
   - 114: {fileID: 1824387432}
+  - 54: {fileID: 1824387435}
+  - 65: {fileID: 1824387434}
   m_Layer: 0
   m_Name: tina2
   m_TagString: Untagged
@@ -43544,7 +43823,7 @@ MonoBehaviour:
   talkTextDefault: Press Q to save me!
   talkTextChange: Thanks! Here is a bucket.
   actionCost: 5
-  action: 0
+  action: 6
   SecondaryAction: 0
   inactive: 0
 --- !u!95 &1824387433
@@ -43563,6 +43842,33 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!65 &1824387434
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1824387430}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1824387435
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1824387430}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1825846946
 GameObject:
   m_ObjectHideFlags: 0
@@ -46686,7 +46992,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1982810695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46750,7 +47056,7 @@ GUITexture:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1982810694}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a10adeab69d216345a0ee720cbf021ae, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -48257,6 +48563,8 @@ GameObject:
   - 4: {fileID: 2048386795}
   - 95: {fileID: 2048386797}
   - 114: {fileID: 2048386796}
+  - 54: {fileID: 2048386799}
+  - 65: {fileID: 2048386798}
   m_Layer: 0
   m_Name: sara
   m_TagString: Untagged
@@ -48313,6 +48621,33 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!65 &2048386798
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2048386794}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &2048386799
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2048386794}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2050229671
 GameObject:
   m_ObjectHideFlags: 0
@@ -49895,6 +50230,8 @@ GameObject:
   - 4: {fileID: 2116455772}
   - 95: {fileID: 2116455774}
   - 114: {fileID: 2116455773}
+  - 54: {fileID: 2116455776}
+  - 65: {fileID: 2116455775}
   m_Layer: 0
   m_Name: tina3
   m_TagString: Untagged
@@ -49952,6 +50289,33 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!65 &2116455775
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2116455771}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &2116455776
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2116455771}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &2118010371
 GameObject:
   m_ObjectHideFlags: 0

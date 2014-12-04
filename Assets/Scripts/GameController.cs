@@ -16,8 +16,8 @@ public class GameController : MonoBehaviour {
 	void Awake () {
 		playerInventory = new List<InventoryObject> ();
 		// Add items initially
-		playerInventory.Add (new InventoryObject (0, "Empty_bucket"));
-		playerInventory.Add (new InventoryObject (0, "Full_bucket"));
+		playerInventory.Add (new InventoryObject (0, "Empty bucket"));
+		playerInventory.Add (new InventoryObject (0, "Full bucket"));
 		if (control == null) {
 			DontDestroyOnLoad (gameObject);
 			control = this;
