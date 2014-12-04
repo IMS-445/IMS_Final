@@ -9,6 +9,7 @@ public enum ObjectAction {
 	DestroyByFilledBucket,
 	FillEmptyBucket,
 	DragMe,
+	AlwaysGiveHealthKit,
 	InDrag
 };
 
@@ -67,6 +68,13 @@ public class NPCTalk : MonoBehaviour {
 		else {
 			myGUIText.enabled = false;
 		}
+		if (action == ObjectAction.InDrag && Input.GetKeyDown (KeyCode.E) && ContainsItem("Health_kit")) {
+			print ("Use a health kit");
+			AddItem(-1,"Health_kit");
+			TriggerAction(SecondaryAction);
+			follow.SetAsFollow(null);
+			action = ObjectAction.Nothing;
+		}
 	}
 
 	public bool TriggerAction(ObjectAction a)
@@ -115,6 +123,15 @@ public class NPCTalk : MonoBehaviour {
 			GameObject.Destroy(myGUIText.gameObject, 5);
 			GameObject.Destroy(this.gameObject, 5);
 			break;
+		case ObjectAction.AlwaysGiveHealthKit:
+			inactive =true; 
+			myGUIText.text = "Thank you for saving me!  Here is a Health kit!";
+			AddItem (1, "Health_kit");
+			peoplesaved.AddSavedPerson();
+			GameController.control.incrementCivilians();
+			GameObject.Destroy(myGUIText.gameObject, 5);
+			GameObject.Destroy(this.gameObject, 5);
+			break;
 		case ObjectAction.DestroyByFilledBucket:
 			workingItem = "Full_bucket";
 			if(ContainsItem(workingItem)){
@@ -130,7 +147,7 @@ public class NPCTalk : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		print ("hi1");
+		print ("hi!");
 		if (action == ObjectAction.InDrag && other.tag == "healZone") {
 			follow.SetAsFollow(null);
 			action = ObjectAction.Nothing;
