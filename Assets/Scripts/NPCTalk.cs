@@ -48,7 +48,7 @@ public class NPCTalk : MonoBehaviour {
 		myGUIText.text = talkTextDefault;
 		myGUIText.fontSize = 20;
 		myGUIText.anchor = TextAnchor.MiddleCenter;
-		obj.transform.position = new Vector3 (0.5f,0.5f,0.0f);
+		obj.transform.position = new Vector3 (0.5f,0.1f,0.0f);
 		GameObject TimeParent = GameObject.FindGameObjectWithTag ("Timer");
 		time = (TimerScript)TimeParent.GetComponent<TimerScript> ();
 	}
@@ -84,10 +84,10 @@ public class NPCTalk : MonoBehaviour {
 		case ObjectAction.Nothing:
 			break;
 		case ObjectAction.FillEmptyBucket:
-			workingItem = "Empty_bucket";
+			workingItem = "Empty bucket";
 			if(ContainsItem(workingItem)){
 				AddItem(-1, workingItem);
-				AddItem(1,"Full_bucket");
+				AddItem(1,"Full bucket");
 			}
 			break;
 		case ObjectAction.DragMe:
@@ -117,7 +117,7 @@ public class NPCTalk : MonoBehaviour {
 		case ObjectAction.AlwaysGiveBucketGeneric:
 			inactive =true; 
 			myGUIText.text = "Thank you for saving me!  Here is a bucket!";
-			AddItem (1, "Empty_bucket");
+			AddItem (1, "Empty bucket");
 			peoplesaved.AddSavedPerson();
 			GameController.control.incrementCivilians();
 			GameObject.Destroy(myGUIText.gameObject, 5);
@@ -126,17 +126,17 @@ public class NPCTalk : MonoBehaviour {
 		case ObjectAction.AlwaysGiveHealthKit:
 			inactive =true; 
 			myGUIText.text = "Thank you for saving me!  Here is a Health kit!";
-			AddItem (1, "Health_kit");
+			AddItem (1, "Health kit");
 			peoplesaved.AddSavedPerson();
 			GameController.control.incrementCivilians();
 			GameObject.Destroy(myGUIText.gameObject, 5);
 			GameObject.Destroy(this.gameObject, 5);
 			break;
 		case ObjectAction.DestroyByFilledBucket:
-			workingItem = "Full_bucket";
+			workingItem = "Full bucket";
 			if(ContainsItem(workingItem)){
 				AddItem(-1,workingItem);
-				AddItem(1,"Empty_bucket");
+				AddItem(1,"Empty bucket");
 				time.timer = time.timer - actionCost;  //This occurs here because of the deletion.
 				GameObject.Destroy(myGUIText.gameObject);
 				GameObject.Destroy(this.gameObject);

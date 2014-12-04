@@ -22,7 +22,7 @@ public class InventoryTracker : MonoBehaviour {
 	void Update () {
 		string s ="";
 		foreach (InventoryObject io in myInventory) {
-			s += "x" + io.getQty() + "\r\n\r\n\r\n";
+			s += io.name + " x" + io.getQty() + "\r\n";
 		}
 		inventoryList.text = s;
 	}
