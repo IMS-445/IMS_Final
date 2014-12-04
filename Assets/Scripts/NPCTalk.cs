@@ -94,6 +94,7 @@ public class NPCTalk : MonoBehaviour {
 			if( follow.getFollow() == null){
 				follow.SetAsFollow(this.gameObject);
 				action = ObjectAction.InDrag;
+				this.myGUIText.text = "";
 			}else{
 				return false;
 			}

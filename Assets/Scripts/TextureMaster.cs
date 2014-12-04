@@ -27,7 +27,7 @@ public class TextureMaster : MonoBehaviour {
 			wait = 0.0f;
 		}
 		if(Input.anyKeyDown && wait <= 0.0f){
-			wait = 5.0f;
+			wait = 1.5f;
 			counter++;
 			if (Scenes.Length == counter) {
 				Application.LoadLevel(NextScene);
