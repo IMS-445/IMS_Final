@@ -140,6 +140,8 @@ GameObject:
   - 4: {fileID: 20496659}
   - 95: {fileID: 20496661}
   - 114: {fileID: 20496660}
+  - 54: {fileID: 20496663}
+  - 136: {fileID: 20496662}
   m_Layer: 0
   m_Name: sona
   m_TagString: Untagged
@@ -197,6 +199,34 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!136 &20496662
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 20496658}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: .5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: .800000012, z: 0}
+--- !u!54 &20496663
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 20496658}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!1 &26471794
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,7 +319,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 36999068}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 40994e6ca60dfe1499273df42a76eb3d, type: 3}
   m_PlayOnAwake: 1
@@ -8133,6 +8163,8 @@ GameObject:
   - 4: {fileID: 754807018}
   - 95: {fileID: 754807020}
   - 114: {fileID: 754807019}
+  - 54: {fileID: 754807022}
+  - 136: {fileID: 754807021}
   m_Layer: 0
   m_Name: sona
   m_TagString: Untagged
@@ -8170,8 +8202,8 @@ MonoBehaviour:
   NPCObject: {fileID: 754807017}
   talkTextDefault: I'm hurt, press 'Q' to help me.
   talkTextChange: Thank you!
-  actionCost: 10
-  action: 2
+  actionCost: 0
+  action: 6
   SecondaryAction: 0
   inactive: 0
 --- !u!95 &754807020
@@ -8190,6 +8222,34 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!136 &754807021
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 754807017}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: .5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: .800000012, z: 0}
+--- !u!54 &754807022
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 754807017}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!1 &760927106
 GameObject:
   m_ObjectHideFlags: 0
@@ -9729,6 +9789,8 @@ GameObject:
   - 4: {fileID: 886413853}
   - 95: {fileID: 886413855}
   - 114: {fileID: 886413854}
+  - 54: {fileID: 886413857}
+  - 136: {fileID: 886413856}
   m_Layer: 0
   m_Name: sona
   m_TagString: Untagged
@@ -9786,6 +9848,34 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!136 &886413856
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 886413852}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: .5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: .800000012, z: 0}
+--- !u!54 &886413857
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 886413852}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!1 &890719962
 GameObject:
   m_ObjectHideFlags: 0
@@ -12403,6 +12493,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: a6cea16e4117a3446a40fde6f8562a7f, type: 2}
+      propertyPath: action
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: a6cea16e4117a3446a40fde6f8562a7f, type: 2}
+      propertyPath: actionCost
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6cea16e4117a3446a40fde6f8562a7f, type: 2}
   m_RootGameObject: {fileID: 754807017}
@@ -12446,6 +12544,8 @@ GameObject:
   - 4: {fileID: 1179381544}
   - 95: {fileID: 1179381546}
   - 114: {fileID: 1179381545}
+  - 54: {fileID: 1179381548}
+  - 136: {fileID: 1179381547}
   m_Layer: 0
   m_Name: sona
   m_TagString: Untagged
@@ -12503,6 +12603,34 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!136 &1179381547
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1179381543}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: .5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: .800000012, z: 0}
+--- !u!54 &1179381548
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1179381543}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!1 &1179434802
 GameObject:
   m_ObjectHideFlags: 0
@@ -16843,6 +16971,8 @@ GameObject:
   - 4: {fileID: 1708205570}
   - 95: {fileID: 1708205572}
   - 114: {fileID: 1708205571}
+  - 54: {fileID: 1708205574}
+  - 136: {fileID: 1708205573}
   m_Layer: 0
   m_Name: sona
   m_TagString: Untagged
@@ -16900,6 +17030,34 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!136 &1708205573
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1708205569}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: .5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: .800000012, z: 0}
+--- !u!54 &1708205574
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1708205569}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!1 &1709873407
 GameObject:
   m_ObjectHideFlags: 0
@@ -17176,6 +17334,8 @@ GameObject:
   - 4: {fileID: 1743906566}
   - 95: {fileID: 1743906568}
   - 114: {fileID: 1743906567}
+  - 54: {fileID: 1743906570}
+  - 136: {fileID: 1743906569}
   m_Layer: 0
   m_Name: sona
   m_TagString: Untagged
@@ -17233,6 +17393,34 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!136 &1743906569
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1743906565}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: .5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: .800000012, z: 0}
+--- !u!54 &1743906570
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1743906565}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!1 &1751387377
 GameObject:
   m_ObjectHideFlags: 0
@@ -18758,6 +18946,8 @@ GameObject:
   - 4: {fileID: 1877011033}
   - 95: {fileID: 1877011035}
   - 114: {fileID: 1877011034}
+  - 54: {fileID: 1877011037}
+  - 136: {fileID: 1877011036}
   m_Layer: 0
   m_Name: tina
   m_TagString: Untagged
@@ -18772,7 +18962,7 @@ Transform:
   m_PrefabInternal: {fileID: 1985391340}
   m_GameObject: {fileID: 1877011032}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -46.9090843, y: -4.71681976, z: -10.8248596}
+  m_LocalPosition: {x: -52.2000008, y: -4.71681976, z: -6.19999981}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 858540022}
@@ -18816,6 +19006,34 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!136 &1877011036
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1877011032}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: .5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: .800000012, z: 0}
+--- !u!54 &1877011037
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1877011032}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!1 &1880716120
 GameObject:
   m_ObjectHideFlags: 0
@@ -19464,6 +19682,8 @@ GameObject:
   - 4: {fileID: 1949299587}
   - 95: {fileID: 1949299589}
   - 114: {fileID: 1949299588}
+  - 54: {fileID: 1949299591}
+  - 136: {fileID: 1949299590}
   m_Layer: 0
   m_Name: sona
   m_TagString: Untagged
@@ -19521,6 +19741,34 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!136 &1949299590
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1949299586}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: .5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: .800000012, z: 0}
+--- !u!54 &1949299591
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1949299586}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!1 &1967967984
 GameObject:
   m_ObjectHideFlags: 0
@@ -19782,7 +20030,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400088, guid: 2538a9eec40f42f4284ed6bc9f613a55, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -46.9090843
+      value: -52.2000008
       objectReference: {fileID: 0}
     - target: {fileID: 400088, guid: 2538a9eec40f42f4284ed6bc9f613a55, type: 2}
       propertyPath: m_LocalPosition.y
@@ -19790,7 +20038,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400088, guid: 2538a9eec40f42f4284ed6bc9f613a55, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -10.8248596
+      value: -6.19999981
       objectReference: {fileID: 0}
     - target: {fileID: 400088, guid: 2538a9eec40f42f4284ed6bc9f613a55, type: 2}
       propertyPath: m_LocalRotation.x
@@ -20873,6 +21121,8 @@ GameObject:
   - 4: {fileID: 2140206450}
   - 95: {fileID: 2140206452}
   - 114: {fileID: 2140206451}
+  - 54: {fileID: 2140206454}
+  - 136: {fileID: 2140206453}
   m_Layer: 0
   m_Name: sona
   m_TagString: Untagged
@@ -20930,6 +21180,34 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!136 &2140206453
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2140206449}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: .5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: .800000012, z: 0}
+--- !u!54 &2140206454
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2140206449}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!1 &2140897249
 GameObject:
   m_ObjectHideFlags: 0

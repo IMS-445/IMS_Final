@@ -131,7 +131,7 @@ public class NPCTalk : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 		print ("hi1");
-		if (action == ObjectAction.InDrag && other.tag == "HealArea") {
+		if (action == ObjectAction.InDrag && other.tag == "healZone") {
 			follow.SetAsFollow(null);
 			action = ObjectAction.Nothing;
 			TriggerAction(SecondaryAction);
